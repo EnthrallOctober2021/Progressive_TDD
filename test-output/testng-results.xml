@@ -1,36 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35857" started-at="2022-01-20T04:19:23Z" finished-at="2022-01-20T04:19:59Z">
+  <suite name="Default suite" duration-ms="17319" started-at="2022-01-25T03:50:18Z" finished-at="2022-01-25T03:50:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35857" started-at="2022-01-20T04:19:23Z" finished-at="2022-01-20T04:19:59Z">
+    <test name="Default test" duration-ms="17319" started-at="2022-01-25T03:50:18Z" finished-at="2022-01-25T03:50:35Z">
       <class name="progressive.qa.auto.AutoQuoteTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@5d76b067]" name="setUp" is-config="true" duration-ms="5139" started-at="2022-01-20T04:19:23Z" finished-at="2022-01-20T04:19:28Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@5d76b067]" name="setUp" is-config="true" duration-ms="5085" started-at="2022-01-25T03:50:18Z" finished-at="2022-01-25T03:50:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="autoQuoteTesting()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@5d76b067]" name="autoQuoteTesting" duration-ms="30692" started-at="2022-01-20T04:19:28Z" finished-at="2022-01-20T04:19:59Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (810807a8992c71dbc787dc8302afa977)] -> xpath: //label[@for='zipCode_overlay' and text()='Enter ZIP Code']] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'NAS', ip: '192.168.1.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\mdnas\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49461}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49461/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 810807a8992c71dbc787dc8302afa977]]>
-            </message>
+        <test-method status="FAIL" signature="autoQuoteTesting()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@5d76b067]" name="autoQuoteTesting" duration-ms="4" started-at="2022-01-25T03:50:23Z" finished-at="2022-01-25T03:50:23Z">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (810807a8992c71dbc787dc8302afa977)] -> xpath: //label[@for='zipCode_overlay' and text()='Enter ZIP Code']] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'NAS', ip: '192.168.1.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\mdnas\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49461}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49461/devtoo..., se:cdpVersion: 97.0.4692.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 810807a8992c71dbc787dc8302afa977
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at progressive.qa.auto.AutoQuoteTest.autoQuoteTesting(AutoQuoteTest.java:17)
+              <![CDATA[java.lang.NullPointerException
+at progressive.qa.auto.AutoQuoteTest.autoQuoteTesting(AutoQuoteTest.java:11)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -58,11 +43,47 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- autoQuoteTesting -->
-        <test-method status="PASS" signature="quttingBrowser()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@5d76b067]" name="quttingBrowser" is-config="true" duration-ms="0" started-at="2022-01-20T04:19:59Z" finished-at="2022-01-20T04:19:59Z">
+        <test-method status="PASS" signature="quttingBrowser()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@5d76b067]" name="quttingBrowser" is-config="true" duration-ms="755" started-at="2022-01-25T03:50:23Z" finished-at="2022-01-25T03:50:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quttingBrowser -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@5d76b067]" name="setUp" is-config="true" duration-ms="3017" started-at="2022-01-25T03:50:24Z" finished-at="2022-01-25T03:50:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@5d76b067]" name="test1" duration-ms="1" started-at="2022-01-25T03:50:27Z" finished-at="2022-01-25T03:50:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="quttingBrowser()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@5d76b067]" name="quttingBrowser" is-config="true" duration-ms="736" started-at="2022-01-25T03:50:27Z" finished-at="2022-01-25T03:50:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quttingBrowser -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@5d76b067]" name="setUp" is-config="true" duration-ms="3058" started-at="2022-01-25T03:50:28Z" finished-at="2022-01-25T03:50:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@5d76b067]" name="test2" duration-ms="1" started-at="2022-01-25T03:50:31Z" finished-at="2022-01-25T03:50:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="quttingBrowser()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@5d76b067]" name="quttingBrowser" is-config="true" duration-ms="749" started-at="2022-01-25T03:50:31Z" finished-at="2022-01-25T03:50:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quttingBrowser -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@5d76b067]" name="setUp" is-config="true" duration-ms="3138" started-at="2022-01-25T03:50:31Z" finished-at="2022-01-25T03:50:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test3()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@5d76b067]" name="test3" duration-ms="1" started-at="2022-01-25T03:50:35Z" finished-at="2022-01-25T03:50:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="quttingBrowser()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@5d76b067]" name="quttingBrowser" is-config="true" duration-ms="745" started-at="2022-01-25T03:50:35Z" finished-at="2022-01-25T03:50:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quttingBrowser -->
