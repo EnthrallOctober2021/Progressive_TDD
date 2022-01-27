@@ -1,34 +1,25 @@
 package progressive.qa.auto;
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
 import org.testng.annotations.Test;
 import progressive.qa.base.BaseClass;
 
 public class AutoQuoteTest extends BaseClass{
 	
 	@Test
-	public void autoQuoteTesting() {
+	public void autoQuoteTesting() throws AWTException {
 		
-		waits.waitUntilClickable(productsPage.autoButton);
-		productsPage.autoButton.click();
-		//commonMethods.click(productsPage.autoButton);
-		
-		waits.waitUntilVisible(productsPage.zipCodeText);
-		String zipCodeText = commonMethods.getText(productsPage.zipCodeText);
-		
-		System.out.println(">>>>>>>>>>>>>>>>>> "+zipCodeText);	
-	}
-	
-	@Test
-	public void test1() {
-		System.out.println("Test 1");
-	}
-	
-	@Test
-	public void test2() {
-		System.out.println("Test 2");
-	}
-	
-	@Test
-	public void test3() {
-		System.out.println("Test 3");
+		commonMethods.click(productsPage.autoButton);
+		commonMethods.getText(zipCodePage.zipCodeText);
+		Robot robot = new Robot();
+		robot.keyPress(KeyEvent.VK_1);
+		robot.keyPress(KeyEvent.VK_0);
+		robot.keyPress(KeyEvent.VK_4);
+		robot.keyPress(KeyEvent.VK_7);
+		robot.keyPress(KeyEvent.VK_3);
+		//commonMethods.writeText(zipCodePage.inputZipCode, "10473");
+		commonMethods.click(zipCodePage.getQuoteBtn);
 	}
 }

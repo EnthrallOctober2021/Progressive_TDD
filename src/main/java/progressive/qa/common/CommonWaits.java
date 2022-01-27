@@ -13,7 +13,7 @@ public class CommonWaits {
 			BaseClass.wait.until(ExpectedConditions.elementToBeClickable(element));
 		} catch (NullPointerException e) {
 			System.out.println(element + " : Not Found");
-			//e.printStackTrace();
+			e.printStackTrace();
 			Assert.fail();
 		}
 	}
@@ -23,7 +23,7 @@ public class CommonWaits {
 			BaseClass.wait.until(ExpectedConditions.visibilityOf(element));
 		} catch (NullPointerException e) {
 			System.out.println(element + " : Not Found");
-			//e.printStackTrace();
+			e.printStackTrace();
 			Assert.fail();
 		}
 	}

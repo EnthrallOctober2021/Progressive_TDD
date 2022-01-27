@@ -10,14 +10,16 @@ public class ReadingFiles {
 	public static void main(String[] args) throws Exception {
 		//readTextFileBufferedReader("./inputFiles/Fruits.txt");
 		//readFileFileReader("./inputFiles/Fruits.txt");
-		readTextFileBufferedReader("./inputFiles/csvFile.csv");
+		readFileFileReader("./inputFiles/csvFile.csv");
 		System.out.println("System processed");
+		
 		char a = '1';
 		System.out.println((int)a);
 	}
 	
 	public static void readTextFileBufferedReader(String path) throws Exception {
 		try {
+			@SuppressWarnings("resource")
 			BufferedReader bufferedReader = new BufferedReader(new FileReader(path));
 			String line;
 			while((line = bufferedReader.readLine())!= null) {

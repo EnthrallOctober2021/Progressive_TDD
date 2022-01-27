@@ -10,6 +10,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import progressive.qa.common.CommonMethods;
 import progressive.qa.common.CommonWaits;
 import progressive.qa.pages.ProductsPage;
+import progressive.qa.pages.ZipCodePage;
 
 public class BaseClass {
 	
@@ -17,7 +18,8 @@ public class BaseClass {
 	public static WebDriverWait wait;
 	
 	public ProductsPage productsPage;
-	public CommonWaits waits;
+	public ZipCodePage zipCodePage;
+	public static CommonWaits waits;
 	public CommonMethods commonMethods;
 	
 	@BeforeMethod
@@ -34,11 +36,12 @@ public class BaseClass {
 	
 	@AfterMethod
 	public void quttingBrowser() {
-		driver.quit();
+		//driver.quit();
 	}
 	
 	private void initElements() {
 		productsPage = new ProductsPage(driver);
+		zipCodePage = new ZipCodePage(driver);
 		waits = new CommonWaits();
 		commonMethods = new CommonMethods();
 	}

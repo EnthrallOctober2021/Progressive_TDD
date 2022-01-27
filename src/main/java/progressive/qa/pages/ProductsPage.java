@@ -13,6 +13,5 @@ public class ProductsPage {
 	
 	@FindBy (xpath = "(//a[contains(.,'Auto')])[1]")
 	public WebElement autoButton;
-	@FindBy (xpath = "//label[@for='zipCode_overlay' and text()='Enter ZIP Code']")
-	public WebElement zipCodeText;
+
 }
