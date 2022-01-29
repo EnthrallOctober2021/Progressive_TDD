@@ -1,4 +1,5 @@
 Topics:
+-------------------------------------
 String Pooling
 Object is the super class of all classes
 hashCode()
@@ -6,3 +7,26 @@ talked about singleton
 more common steps
 common dropdown method
 personal details class created
+
+Class Note:
+--------------------------------------
+POM rules:
+1. There will be a class for each page
+2. Object (WebElement, step methods) each page will be inside the designated class
+3. Page each step will be define inside each page
+4. All the single step method can put inside a page steps method
+
+Access Modifier:
+1. 
+
+Singleton:
+All the new instances are pointing to the same object by making the constructor private
+
+Assertion:
+1. is the actual result equal to expected result?
+
+getText() = actualResult
+expected result = param
+actualResult == expectedResult
+
+The placeholder will have "Name & Birthdate"
