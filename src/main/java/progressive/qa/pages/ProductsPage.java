@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import progressive.qa.base.BaseClass;
+
 public class ProductsPage {
 	
 	public ProductsPage(WebDriver driver) {
@@ -14,4 +16,11 @@ public class ProductsPage {
 	@FindBy (xpath = "(//a[contains(.,'Auto')])[1]")
 	public WebElement autoButton;
 
+	private void clickAutoBtnStep() {
+		BaseClass.commonMethods.click(autoButton);
+	}
+	
+	public void productPageSteps() {
+		clickAutoBtnStep();
+	}
 }

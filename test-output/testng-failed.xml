@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="progressive.qa.auto.AutoQuoteTest">
+      <class name="testPackage.LearningJava">
         <methods>
-          <include name="autoQuoteTesting"/>
-          <include name="quttingBrowser"/>
-          <include name="setUp"/>
+          <include name="throwException"/>
         </methods>
-      </class> <!-- progressive.qa.auto.AutoQuoteTest -->
+      </class> <!-- testPackage.LearningJava -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,25 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6780" started-at="2022-01-27T04:06:11Z" finished-at="2022-01-27T04:06:18Z">
+  <suite name="Default suite" duration-ms="38" started-at="2022-01-29T04:03:05Z" finished-at="2022-01-29T04:03:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6780" started-at="2022-01-27T04:06:11Z" finished-at="2022-01-27T04:06:18Z">
-      <class name="progressive.qa.auto.AutoQuoteTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@1c3a4799]" name="setUp" is-config="true" duration-ms="5309" started-at="2022-01-27T04:06:11Z" finished-at="2022-01-27T04:06:16Z">
+    <test name="Default test" duration-ms="38" started-at="2022-01-29T04:03:05Z" finished-at="2022-01-29T04:03:06Z">
+      <class name="testPackage.LearningJava">
+        <test-method status="PASS" signature="testObjectHashCode()[pri:0, instance:testPackage.LearningJava@68bbe345]" name="testObjectHashCode" duration-ms="9" started-at="2022-01-29T04:03:06Z" finished-at="2022-01-29T04:03:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="autoQuoteTesting()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@1c3a4799]" name="autoQuoteTesting" duration-ms="1448" started-at="2022-01-27T04:06:16Z" finished-at="2022-01-27T04:06:18Z">
+        </test-method> <!-- testObjectHashCode -->
+        <test-method status="FAIL" signature="throwException()[pri:0, instance:testPackage.LearningJava@68bbe345]" name="throwException" duration-ms="1" started-at="2022-01-29T04:03:06Z" finished-at="2022-01-29T04:03:06Z">
+          <exception class="testPackage.LearningJava$MyException">
+            <full-stacktrace>
+              <![CDATA[testPackage.LearningJava$MyException
+at testPackage.LearningJava.throwException(LearningJava.java:26)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- testPackage.LearningJava$MyException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- autoQuoteTesting -->
-        <test-method status="PASS" signature="quttingBrowser()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@1c3a4799]" name="quttingBrowser" is-config="true" duration-ms="0" started-at="2022-01-27T04:06:18Z" finished-at="2022-01-27T04:06:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quttingBrowser -->
-      </class> <!-- progressive.qa.auto.AutoQuoteTest -->
+        </test-method> <!-- throwException -->
+      </class> <!-- testPackage.LearningJava -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

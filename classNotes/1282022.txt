@@ -1,0 +1,8 @@
+Topics:
+String Pooling
+Object is the super class of all classes
+hashCode()
+talked about singleton
+more common steps
+common dropdown method
+personal details class created

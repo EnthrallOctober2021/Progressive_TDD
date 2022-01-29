@@ -1,6 +1,8 @@
 package progressive.qa.common;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import progressive.qa.base.BaseClass;
 import progressive.qa.reporting.Java_Logger;
@@ -12,19 +14,20 @@ public class CommonMethods {
 			BaseClass.waits.waitUntilClickable(element);
 			element.click();
 			Java_Logger.getLog(element + " clicked");
-		} catch (NullPointerException e) {
+		} catch (NullPointerException | NoSuchElementException e) {
 			e.printStackTrace();
 			Java_Logger.getLog(element + " Element Not Found");
 			Assert.fail();
 		}
 	}
 
-	public String getText(WebElement element) {
+	public String getText(WebElement element, String expected) {
 		try {
 			BaseClass.waits.waitUntilVisible(element);
-			Java_Logger.getLog(element + " Text Value : " + element.getText());
+			Java_Logger.getLog("Actual value : " + element.getText() +" >>><<< Expected value : "+ expected);
+			Assert.assertEquals(element.getText(), expected);
 			return element.getText();
-		} catch (NullPointerException e) {
+		} catch (NullPointerException | NoSuchElementException e) {
 			e.printStackTrace();
 			Java_Logger.getLog(element +" Element Not Found");
 			return element + " : Element Not Found";
@@ -35,11 +38,29 @@ public class CommonMethods {
 		try {
 			BaseClass.waits.waitUntilClickable(element);
 			element.sendKeys(value);
-			Java_Logger.getLog(element + " Text Value entered : " + element.getText());
-		} catch (NullPointerException e) {
+			Java_Logger.getLog(element + " Text Value entered : " + value);
+		} catch (NullPointerException | NoSuchElementException e) {
 			e.printStackTrace();
 			Java_Logger.getLog(element +" Element Not Found");
 			Assert.fail();
+		}
+	}
+	
+	public void selectDropDown(WebElement element, String value) {
+		try {
+			Select select = new Select(element);
+			select.selectByValue(value);
+			Java_Logger.getLog("");
+		} catch (NullPointerException | NoSuchElementException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void sleep(int sec) {
+		try {
+			Thread.sleep(sec*1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
 		}
 	}
 }
