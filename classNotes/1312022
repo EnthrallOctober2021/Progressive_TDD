@@ -1,3 +1,10 @@
+Topics:
+1. Recap
+2. Framework Diagram
+https://docs.google.com/spreadsheets/d/1OG1hU5byfcd2J9KmWm84JJb-cF0ct1u0rCOGvuaLTIk/edit#gid=0
+3. TestNg Suite
+4. TestNG annotations priority
+-------------------------------------
 Scenario: User will add macbook pro into there cart
 1. Open Chrome
 2. Naviagate to url (www.amazon.com)
