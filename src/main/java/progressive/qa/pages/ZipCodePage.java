@@ -30,18 +30,18 @@ public class ZipCodePage {
 	public WebElement altGetQuoteBtn;
 	
 	private void getZipCodeTextStep(WebElement element, String expected) {
-		BaseClass.commonMethods.getText(element, expected);
+		BaseClass.commonActions.getText(element, expected);
 	}
 	
 	private void zipCodeInputStep(String zipCode, String expected) {
 		if (BaseClass.driver.getCurrentUrl().contains("https://www.progressive.com/#s")) {
 			getZipCodeTextStep(altZipCodeText, expected);
-			BaseClass.commonMethods.click(altZipInput);
-			BaseClass.commonMethods.writeText(altZipInput, zipCode);
+			BaseClass.commonActions.click(altZipInput);
+			BaseClass.commonActions.writeText(altZipInput, zipCode);
 			clickQuoteBtnStep(altGetQuoteBtn);
 		}else if(BaseClass.driver.getCurrentUrl().contains("https://www.progressive.com/#l")) {
 			getZipCodeTextStep(zipCodeText, expected);
-			BaseClass.commonMethods.sleep(5);
+			BaseClass.commonActions.sleep(5);
 			BaseClass.robot.keyPress(KeyEvent.VK_1);
 			BaseClass.robot.keyPress(KeyEvent.VK_0);
 			BaseClass.robot.keyPress(KeyEvent.VK_4);
@@ -55,7 +55,7 @@ public class ZipCodePage {
 	}
 	
 	private void clickQuoteBtnStep(WebElement element) {
-		BaseClass.commonMethods.click(element);
+		BaseClass.commonActions.click(element);
 	}
 	
 	public void zipCodePageSteps(String zipCode, String expected) {

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RegressionSuite">
+	<test thread-count="5" name="RegressionTest">
+		<classes>
+			<class name="progressive.qa.auto.AutoQuoteTest" />
+			<class name="progressive.qa.auto.AutoQuoteTest" />
+			<class name="progressive.qa.auto.AutoQuoteTest" />
+			<class name="progressive.qa.auto.AutoQuoteTest" />
+			<class name="progressive.qa.auto.AutoQuoteTest" />
+			<class name="progressive.qa.auto.AutoQuoteTest" />
+			<class name="progressive.qa.auto.AutoQuoteTest" />
+		</classes>
+	</test> <!-- RegressionTest -->
+	<test name="Smoke">
+		<classes>
+			<class name="progressive.qa.auto.AutoQuoteTest" />
+		</classes>
+	</test>
+	<test name="Functional">
+		<classes>
+			<class name="progressive.qa.auto.AutoQuoteTest" />
+		</classes>
+	</test>
+	<test name="Non-FuctionalTest">
+		<classes>
+			<class name="progressive.qa.auto.AutoQuoteTest" />
+		</classes>
+	</test>
+</suite> <!-- RegressionSuite -->

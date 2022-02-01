@@ -12,29 +12,36 @@ public class PersonalDetails {
 	public PersonalDetails(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	@FindBy(xpath = "(//legend[@class='section-sub-header'])[1]")
 	public WebElement nameText;
 	@FindBy(id = "NameAndAddressEdit_embedded_questions_list_FirstName")
 	public WebElement firstNameInput;
 	@FindBy(id = "NameAndAddressEdit_embedded_questions_list_LastName")
 	public WebElement lastNameInput;
+	@FindBy(id = "NameAndAddressEdit_embedded_questions_list_Suffix")
+	public WebElement suffix;
 	
 	private void getNameTextStep(String expected) {
-		BaseClass.commonMethods.getText(nameText, expected);
+		BaseClass.commonActions.getText(nameText, expected);
 	}
 	
 	private void firstNameInputStep(String value) {
-		BaseClass.commonMethods.writeText(firstNameInput, value);
+		BaseClass.commonActions.writeText(firstNameInput, value);
 	}
 	
 	private void lastNameInputStep(String value) {
-		BaseClass.commonMethods.writeText(lastNameInput, value);
+		BaseClass.commonActions.writeText(lastNameInput, value);
 	}
 	
-	public void personalDetailsSteps(String expected, String firstName, String lastName) {
+	private void selectSuffix(String suffixValue) {
+		BaseClass.commonActions.selectDropDown(suffix, suffixValue);
+	}
+	
+	public void personalDetailsSteps(String expected, String firstName, String lastName, String suffixValue) {
 		getNameTextStep(expected);
 		firstNameInputStep(firstName);
 		lastNameInputStep(lastName);
+		selectSuffix(suffixValue);
 	}
 }

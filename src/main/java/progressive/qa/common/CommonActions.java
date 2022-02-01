@@ -7,7 +7,7 @@ import org.testng.Assert;
 import progressive.qa.base.BaseClass;
 import progressive.qa.reporting.Java_Logger;
 
-public class CommonMethods {
+public class CommonActions {
 
 	public void click(WebElement element) {
 		try {
@@ -48,11 +48,14 @@ public class CommonMethods {
 	
 	public void selectDropDown(WebElement element, String value) {
 		try {
+			//BaseClass.waits.waitUntilSelectable(element);
 			Select select = new Select(element);
 			select.selectByValue(value);
-			Java_Logger.getLog("");
+			Java_Logger.getLog(value + " : Passed for the element, " + element);
 		} catch (NullPointerException | NoSuchElementException e) {
 			e.printStackTrace();
+			Java_Logger.getLog(element +" Element Not Found");
+			Assert.fail();
 		}
 	}
 	

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jan 28 23:03:05 EST 2022</td>
+<td>Started on:</td><td>Mon Jan 31 23:06:16 EST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (38 ms)</td>
+<tr><td>Total time:</td><td>47 seconds (47577 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,9 +75,20 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testPackage.LearningJava.throwException()'><b>throwException</b><br>Test class: testPackage.LearningJava</td>
-<td><div><pre>testPackage.LearningJava$MyException
-	at testPackage.LearningJava.throwException(LearningJava.java:26)
+<td title='progressive.qa.auto.AutoQuoteTest.autoQuoteTesting()'><b>autoQuoteTesting</b><br>Test class: progressive.qa.auto.AutoQuoteTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element ([[ChromeDriver: chrome on WINDOWS (4eb31de5fcf4d19cd2759c7fed1a76dd)] -&gt; id: NameAndAddressEdit_embedded_questions_list_Suffix]) to be selected (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;NAS&apos;, ip: &apos;192.168.1.168&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\mdnas\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59335}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59335/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4eb31de5fcf4d19cd2759c7fed1a76dd
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at progressive.qa.common.CommonWaits.waitUntilSelectable(CommonWaits.java:33)
+	at progressive.qa.common.CommonActions.selectDropDown(CommonActions.java:51)
+	at progressive.qa.pages.PersonalDetails.selectSuffix(PersonalDetails.java:38)
+	at progressive.qa.pages.PersonalDetails.personalDetailsSteps(PersonalDetails.java:45)
+	at progressive.qa.auto.AutoQuoteTest.autoQuoteTesting(AutoQuoteTest.java:12)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -103,9 +114,20 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1136497418", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1136497418'><pre>testPackage.LearningJava$MyException
-	at testPackage.LearningJava.throwException(LearningJava.java:26)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1215023524", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1215023524'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element ([[ChromeDriver: chrome on WINDOWS (4eb31de5fcf4d19cd2759c7fed1a76dd)] -&gt; id: NameAndAddressEdit_embedded_questions_list_Suffix]) to be selected (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;NAS&apos;, ip: &apos;192.168.1.168&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\mdnas\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59335}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59335/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4eb31de5fcf4d19cd2759c7fed1a76dd
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at progressive.qa.common.CommonWaits.waitUntilSelectable(CommonWaits.java:33)
+	at progressive.qa.common.CommonActions.selectDropDown(CommonActions.java:51)
+	at progressive.qa.pages.PersonalDetails.selectSuffix(PersonalDetails.java:38)
+	at progressive.qa.pages.PersonalDetails.personalDetailsSteps(PersonalDetails.java:45)
+	at progressive.qa.auto.AutoQuoteTest.autoQuoteTesting(AutoQuoteTest.java:12)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -132,21 +154,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>testPackage.LearningJava@68bbe345</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testPackage.LearningJava.testObjectHashCode()'><b>testObjectHashCode</b><br>Test class: testPackage.LearningJava</td>
-<td></td>
-<td>0</td>
-<td>testPackage.LearningJava@68bbe345</td></tr>
+<td>40</td>
+<td>progressive.qa.auto.AutoQuoteTest@1c3a4799</td></tr>
 </table><p>
 </body>
 </html>

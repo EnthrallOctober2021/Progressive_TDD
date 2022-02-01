@@ -27,4 +27,16 @@ public class CommonWaits {
 			Assert.fail();
 		}
 	}
+	
+	public void waitUntilSelectable(WebElement element) {
+		try {
+			BaseClass.wait.until(ExpectedConditions.elementToBeSelected(element));
+		} catch (NullPointerException e) {
+			System.out.println(element + " : Not Found");
+			e.printStackTrace();
+			Assert.fail();
+		}
+	}
+	
+	
 }

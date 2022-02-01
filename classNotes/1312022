@@ -1,0 +1,38 @@
+Scenario: User will add macbook pro into there cart
+1. Open Chrome
+2. Naviagate to url (www.amazon.com)
+3. Click - Search bar
+4. Write - Search bar - param: "Macbook Pro"
+5. Click - Search icon
+6. Scroll - "Apple MacBook Pro - 14 inches - 16 GB RAM"
+7. Click - "Apple MacBook Pro - 14 inches - 16 GB RAM"
+8. Click - Add to cart
+9. Click - No Thanks
+10. Click - Proceed to checkout
+11. Verify - "Apple MacBook Pro - 14 inches - 16 GB RAM"
+
+variableName
+method()
+
+-- element from page and passed in runtime
+4. getText()
+5. String zipCode = getText()
+6. inputZipCode(zipCode)
+
+if there are no select tag, slenium select class will not work
+
+-- Dynamic Dropdown without select class
+1. List <WebElement> = driver.findelements(By.locator)
+2. ScrollIntoView(element)
+3. Clcik()
+
+- TestNG hi
+- @BeforeSuite
+- @BeforeTest
+- @BeforeClass
+- @BeforeMethod
+- @Test
+- @AfterMethod
+- @AfterClass
+- @AfterTest
+- @AfterSuite

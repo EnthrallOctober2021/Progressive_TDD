@@ -17,7 +17,7 @@ public class ProductsPage {
 	public WebElement autoButton;
 
 	private void clickAutoBtnStep() {
-		BaseClass.commonMethods.click(autoButton);
+		BaseClass.commonActions.click(autoButton);
 	}
 	
 	public void productPageSteps() {

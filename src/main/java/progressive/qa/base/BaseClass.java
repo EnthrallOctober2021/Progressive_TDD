@@ -10,7 +10,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import progressive.qa.common.CommonMethods;
+import progressive.qa.common.CommonActions;
 import progressive.qa.common.CommonWaits;
 import progressive.qa.pages.PersonalDetails;
 import progressive.qa.pages.ProductsPage;
@@ -22,12 +22,13 @@ public class BaseClass {
 	public static WebDriverWait wait;
 	public static Robot robot;
 	
+	public static CommonWaits waits;
+	public static CommonActions commonActions;
+	
 	public ProductsPage productsPage;
 	public ZipCodePage zipCodePage;
 	public PersonalDetails personalDetails;
-	public static CommonWaits waits;
-	public static CommonMethods commonMethods;
-	
+
 	@BeforeMethod
 	public void setUp() {
 		WebDriverManager.chromedriver().setup();
@@ -56,6 +57,6 @@ public class BaseClass {
 		zipCodePage = new ZipCodePage(driver);
 		personalDetails = new PersonalDetails(driver);
 		waits = new CommonWaits();
-		commonMethods = new CommonMethods();
+		commonActions = new CommonActions();
 	}
 }
