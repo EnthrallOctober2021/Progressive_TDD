@@ -15,6 +15,7 @@ import progressive.qa.common.CommonWaits;
 import progressive.qa.pages.PersonalDetails;
 import progressive.qa.pages.ProductsPage;
 import progressive.qa.pages.ZipCodePage;
+import progressive.qa.utilities.Configurable;
 
 public class BaseClass {
 	
@@ -24,6 +25,7 @@ public class BaseClass {
 	
 	public static CommonWaits waits;
 	public static CommonActions commonActions;
+	public Configurable configurable;
 	
 	public ProductsPage productsPage;
 	public ZipCodePage zipCodePage;
@@ -34,17 +36,17 @@ public class BaseClass {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://www.progressive.com/");
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		initElements();
+		driver.get(configurable.getUrl());
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(configurable.getPageLoadWait()));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(configurable.getElementImplicitWait()));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(configurable.getExplicitWait()));
 		try {
 			robot = new Robot();
 		}catch(AWTException e) {
 			e.printStackTrace();
 			Assert.fail();
 		}
-		initElements();
 	}
 	
 	@AfterMethod
@@ -58,5 +60,6 @@ public class BaseClass {
 		personalDetails = new PersonalDetails(driver);
 		waits = new CommonWaits();
 		commonActions = new CommonActions();
+		configurable = Configurable.getInstance();
 	}
 }

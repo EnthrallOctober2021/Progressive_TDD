@@ -9,10 +9,22 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">SmokeSuite</th></tr>
-<tr><td><a href="#t0">SmokeTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">10,863</td><td></td><td></td></tr>
+<tr><td><a href="#t0">SmokeTest</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">3,408</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SmokeSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">SmokeTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">progressive.qa.auto.AutoQuoteTest</td><td><a href="#m0">autoQuoteTesting</a></td><td rowspan="1">1643689466410</td><td rowspan="1">4536</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SmokeSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">SmokeTest &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">progressive.qa.auto.AutoQuoteTest</td><td><a href="#m0">setUp</a></td><td rowspan="1">1643860930595</td><td rowspan="1">3368</td></tr><tr><th colspan="4">SmokeTest &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">progressive.qa.auto.AutoQuoteTest</td><td><a href="#m1">quttingBrowser</a></td><td rowspan="1">1643860933974</td><td rowspan="1">0</td></tr><tr><th colspan="4">SmokeTest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">progressive.qa.auto.AutoQuoteTest</td><td><a href="#m2">autoQuoteTesting</a></td><td rowspan="1">1643860933970</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>SmokeTest</h2><h3 id="m0">progressive.qa.auto.AutoQuoteTest#autoQuoteTesting</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>SmokeTest</h2><h3 id="m0">progressive.qa.auto.AutoQuoteTest#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at progressive.qa.utilities.Configurable.loadProperties(Configurable.java:50)
+	at progressive.qa.utilities.Configurable.getInstance(Configurable.java:29)
+	at progressive.qa.base.BaseClass.initElements(BaseClass.java:63)
+	at progressive.qa.base.BaseClass.setUp(BaseClass.java:39)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">progressive.qa.auto.AutoQuoteTest#quttingBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">progressive.qa.auto.AutoQuoteTest#autoQuoteTesting</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: null
+	at progressive.qa.utilities.Configurable.loadProperties(Configurable.java:50)
+	at progressive.qa.utilities.Configurable.getInstance(Configurable.java:29)
+	at progressive.qa.base.BaseClass.initElements(BaseClass.java:63)
+	at progressive.qa.base.BaseClass.setUp(BaseClass.java:39)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

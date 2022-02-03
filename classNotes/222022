@@ -1,0 +1,8 @@
+Class Note:
+
+synchronized - will make sure task are following one by one
+https://docs.oracle.com/javase/tutorial/essential/concurrency/syncmeth.html
+
+Singleton
+reading properties file
+converting string to int
