@@ -1,0 +1,17 @@
+Reporter.log from testNG, which will write the logs in the reporting file
+Java Logger is for consol print, replacing System.out.println()
+
+interview Ques:
+1. What are the locators we used in selenium?
+Ans - 8 locators. id, className, css, linkText, partialLinkText, tagName, name, xpath
+
+2. Difference between absolute xpath and dynamic xpath? and why we use them?
+
+3. Difference between By and WebElement?
+- By will return locator(xpath, id....), WebElement will return element with locator
+
+4. JavaScriptExecutor - Scroll page up and down
+- scrollIntoView the element
+
+How you are going to handle elementNotVisible exception?
+- by using scrollIntoView from javascriptexecutor

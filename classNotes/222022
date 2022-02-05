@@ -3,6 +3,6 @@ Class Note:
 synchronized - will make sure task are following one by one
 https://docs.oracle.com/javase/tutorial/essential/concurrency/syncmeth.html
 
-Singleton
+Singleton is a design pattern where multiple instances are pointing toward the same object.
 reading properties file
 converting string to int

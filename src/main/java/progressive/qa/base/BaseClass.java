@@ -3,6 +3,8 @@ package progressive.qa.base;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.time.Duration;
+
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -14,6 +16,7 @@ import progressive.qa.common.CommonActions;
 import progressive.qa.common.CommonWaits;
 import progressive.qa.pages.PersonalDetails;
 import progressive.qa.pages.ProductsPage;
+import progressive.qa.pages.VehiclePage;
 import progressive.qa.pages.ZipCodePage;
 import progressive.qa.utilities.Configurable;
 
@@ -22,6 +25,7 @@ public class BaseClass {
 	public static WebDriver driver;
 	public static WebDriverWait wait;
 	public static Robot robot;
+	public static JavascriptExecutor jsExecutor;
 	
 	public static CommonWaits waits;
 	public static CommonActions commonActions;
@@ -30,6 +34,7 @@ public class BaseClass {
 	public ProductsPage productsPage;
 	public ZipCodePage zipCodePage;
 	public PersonalDetails personalDetails;
+	public VehiclePage vehiclePage;
 
 	@BeforeMethod
 	public void setUp() {
@@ -58,8 +63,10 @@ public class BaseClass {
 		productsPage = new ProductsPage(driver);
 		zipCodePage = new ZipCodePage(driver);
 		personalDetails = new PersonalDetails(driver);
+		vehiclePage = new VehiclePage(driver);
 		waits = new CommonWaits();
 		commonActions = new CommonActions();
 		configurable = Configurable.getInstance();
+		jsExecutor = (JavascriptExecutor)driver;
 	}
 }

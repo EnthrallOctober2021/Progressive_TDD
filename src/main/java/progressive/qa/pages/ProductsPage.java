@@ -14,7 +14,7 @@ public class ProductsPage {
 	}
 	
 	@FindBy (xpath = "(//a[contains(.,'Auto')])[1]")
-	public WebElement autoButton;
+	private WebElement autoButton;
 
 	private void clickAutoBtnStep() {
 		BaseClass.commonActions.click(autoButton);

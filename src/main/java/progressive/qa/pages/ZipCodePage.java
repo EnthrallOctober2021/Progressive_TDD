@@ -17,17 +17,17 @@ public class ZipCodePage {
 	}
 	
 	@FindBy(xpath = "//label[@for='zipCode_overlay' and text()='Enter ZIP Code']")
-	public WebElement zipCodeText;
+	private WebElement zipCodeText;
 	@FindBy(xpath = "//label[@for='zipCode_overlay_subproducts' and text()='Enter ZIP Code']")
-	public WebElement altZipCodeText;
+	private WebElement altZipCodeText;
 	@FindBy(xpath = "(//input[@name='ZipCode'])[1]")
-	public WebElement inputZipCode;
+	private WebElement inputZipCode;
 	@FindBy(xpath = "(//input[@name='ZipCode'])[2]")
-	public WebElement altZipInput;
+	private WebElement altZipInput;
 	@FindBy(id = "qsButton_overlay")
-	public WebElement getQuoteBtn;
+	private WebElement getQuoteBtn;
 	@FindBy(id = "qsButton_overlay_subproducts")
-	public WebElement altGetQuoteBtn;
+	private WebElement altGetQuoteBtn;
 	
 	private void getZipCodeTextStep(WebElement element, String expected) {
 		BaseClass.commonActions.getText(element, expected);
