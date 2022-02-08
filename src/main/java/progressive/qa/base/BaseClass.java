@@ -1,14 +1,10 @@
 package progressive.qa.base;
 
-import java.awt.AWTException;
-import java.awt.Robot;
 import java.time.Duration;
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -24,7 +20,6 @@ public class BaseClass {
 	
 	public static WebDriver driver;
 	public static WebDriverWait wait;
-	public static Robot robot;
 	public static JavascriptExecutor jsExecutor;
 	
 	public static CommonWaits waits;
@@ -46,17 +41,11 @@ public class BaseClass {
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(configurable.getPageLoadWait()));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(configurable.getElementImplicitWait()));
 		wait = new WebDriverWait(driver, Duration.ofSeconds(configurable.getExplicitWait()));
-		try {
-			robot = new Robot();
-		}catch(AWTException e) {
-			e.printStackTrace();
-			Assert.fail();
-		}
 	}
 	
 	@AfterMethod
 	public void quttingBrowser() {
-		//driver.quit();
+		driver.quit();
 	}
 	
 	private void initElements() {

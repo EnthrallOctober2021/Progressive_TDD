@@ -55,7 +55,6 @@ public class PersonalDetails {
 	}
 	
 	private void inputAddress(String addressValue) {
-		BaseClass.commonActions.sleep(1);
 		BaseClass.commonActions.writeText(addressElement, addressValue);
 	}
 	

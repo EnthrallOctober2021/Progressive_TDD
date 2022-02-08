@@ -26,8 +26,8 @@ public class Configurable {
 	public static Configurable getInstance() {
 		if (configurable == null) {
 			configurable = new Configurable();
-			configurable.loadProperties();
 		}
+		configurable.loadProperties();
 		return configurable;
 	}
 

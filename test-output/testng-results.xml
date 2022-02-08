@@ -1,139 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (b935b43b63203f034c7cad9914d5910f)] -> xpath: (//a[contains(.,'Auto')])[1]] clicked<br>]]>
-    </line>
-    <line>
-      <![CDATA[Actual value : Enter ZIP Code >>><<< Expected value : Enter ZIP Code<br>]]>
-    </line>
-    <line>
-      <![CDATA[Thread is sleeping zZz...<br>]]>
-    </line>
-    <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (b935b43b63203f034c7cad9914d5910f)] -> id: qsButton_overlay] clicked<br>]]>
-    </line>
-    <line>
-      <![CDATA[Actual value : Name & Birthdate >>><<< Expected value : Name & Birthdate<br>]]>
-    </line>
-    <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (b935b43b63203f034c7cad9914d5910f)] -> id: NameAndAddressEdit_embedded_questions_list_FirstName] Text Value entered : John<br>]]>
-    </line>
-    <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (b935b43b63203f034c7cad9914d5910f)] -> id: NameAndAddressEdit_embedded_questions_list_LastName] Text Value entered : Doe<br>]]>
-    </line>
-    <line>
-      <![CDATA[SR : has been selected for element, [[ChromeDriver: chrome on WINDOWS (b935b43b63203f034c7cad9914d5910f)] -> id: NameAndAddressEdit_embedded_questions_list_Suffix]<br>]]>
-    </line>
-    <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (b935b43b63203f034c7cad9914d5910f)] -> id: NameAndAddressEdit_embedded_questions_list_DateOfBirth] Text Value entered : 10/10/2000<br>]]>
-    </line>
-    <line>
-      <![CDATA[Thread is sleeping zZz...<br>]]>
-    </line>
-    <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (b935b43b63203f034c7cad9914d5910f)] -> xpath: //div[contains(.,'Street number')]/following-sibling::input] Text Value entered : 747 Taylor Ave<br>]]>
-    </line>
-    <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (b935b43b63203f034c7cad9914d5910f)] -> id: NameAndAddressEdit_embedded_questions_list_ApartmentUnit] Text Value entered : 2B<br>]]>
-    </line>
-    <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (b935b43b63203f034c7cad9914d5910f)] -> id: NameAndAddressEdit_embedded_questions_list_City] Text Value entered : Bronx<br>]]>
-    </line>
-    <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (b935b43b63203f034c7cad9914d5910f)] -> xpath: //button[contains(.,'Okay, start my quote')]] clicked<br>]]>
-    </line>
-    <line>
-      <![CDATA[By.xpath: //span[contains(.,'Oops')] : Element is present<br>]]>
-    </line>
-    <line>
-      <![CDATA[Thread is sleeping zZz...<br>]]>
-    </line>
-    <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (b935b43b63203f034c7cad9914d5910f)] -> xpath: //div[contains(.,'Street number')]/following-sibling::input] Text Value entered : 747 Taylor Ave<br>]]>
-    </line>
-    <line>
-      <![CDATA[Proxy element for: DefaultElementLocator 'By.xpath: //button[contains(.,'Okay, start my quote')]' clicked<br>]]>
-    </line>
-    <line>
-      <![CDATA[Actual value : Tell us about your vehicle(s)... >>><<< Expected value : Tell us about your vehicle(s)...<br>]]>
+      <![CDATA[this is an auto related test<br>]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35119" started-at="2022-02-05T04:01:55Z" finished-at="2022-02-05T04:02:30Z">
+  <suite name="SmokeSuite" duration-ms="6730" started-at="2022-02-08T04:13:51Z" finished-at="2022-02-08T04:13:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35119" started-at="2022-02-05T04:01:55Z" finished-at="2022-02-05T04:02:30Z">
+    <test name="SmokeTest" duration-ms="6730" started-at="2022-02-08T04:13:51Z" finished-at="2022-02-08T04:13:58Z">
       <class name="progressive.qa.auto.AutoQuoteTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@1c3a4799]" name="setUp" is-config="true" duration-ms="6843" started-at="2022-02-05T04:01:55Z" finished-at="2022-02-05T04:02:01Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@26aa12dd]" name="setUp" is-config="true" duration-ms="5878" started-at="2022-02-08T04:13:51Z" finished-at="2022-02-08T04:13:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="autoQuoteTesting()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@1c3a4799]" name="autoQuoteTesting" duration-ms="28246" started-at="2022-02-05T04:02:01Z" finished-at="2022-02-05T04:02:30Z">
+        <test-method status="PASS" signature="testMethodAuto()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@26aa12dd]" name="testMethodAuto" duration-ms="6" started-at="2022-02-08T04:13:57Z" depends-on-methods="progressive.qa.auto.AutoQuoteTest.autoQuoteTesting" finished-at="2022-02-08T04:13:57Z">
           <reporter-output>
             <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (b935b43b63203f034c7cad9914d5910f)] -> xpath: (//a[contains(.,'Auto')])[1]] clicked<br>]]>
-            </line>
-            <line>
-              <![CDATA[Actual value : Enter ZIP Code >>><<< Expected value : Enter ZIP Code<br>]]>
-            </line>
-            <line>
-              <![CDATA[Thread is sleeping zZz...<br>]]>
-            </line>
-            <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (b935b43b63203f034c7cad9914d5910f)] -> id: qsButton_overlay] clicked<br>]]>
-            </line>
-            <line>
-              <![CDATA[Actual value : Name & Birthdate >>><<< Expected value : Name & Birthdate<br>]]>
-            </line>
-            <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (b935b43b63203f034c7cad9914d5910f)] -> id: NameAndAddressEdit_embedded_questions_list_FirstName] Text Value entered : John<br>]]>
-            </line>
-            <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (b935b43b63203f034c7cad9914d5910f)] -> id: NameAndAddressEdit_embedded_questions_list_LastName] Text Value entered : Doe<br>]]>
-            </line>
-            <line>
-              <![CDATA[SR : has been selected for element, [[ChromeDriver: chrome on WINDOWS (b935b43b63203f034c7cad9914d5910f)] -> id: NameAndAddressEdit_embedded_questions_list_Suffix]<br>]]>
-            </line>
-            <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (b935b43b63203f034c7cad9914d5910f)] -> id: NameAndAddressEdit_embedded_questions_list_DateOfBirth] Text Value entered : 10/10/2000<br>]]>
-            </line>
-            <line>
-              <![CDATA[Thread is sleeping zZz...<br>]]>
-            </line>
-            <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (b935b43b63203f034c7cad9914d5910f)] -> xpath: //div[contains(.,'Street number')]/following-sibling::input] Text Value entered : 747 Taylor Ave<br>]]>
-            </line>
-            <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (b935b43b63203f034c7cad9914d5910f)] -> id: NameAndAddressEdit_embedded_questions_list_ApartmentUnit] Text Value entered : 2B<br>]]>
-            </line>
-            <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (b935b43b63203f034c7cad9914d5910f)] -> id: NameAndAddressEdit_embedded_questions_list_City] Text Value entered : Bronx<br>]]>
-            </line>
-            <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (b935b43b63203f034c7cad9914d5910f)] -> xpath: //button[contains(.,'Okay, start my quote')]] clicked<br>]]>
-            </line>
-            <line>
-              <![CDATA[By.xpath: //span[contains(.,'Oops')] : Element is present<br>]]>
-            </line>
-            <line>
-              <![CDATA[Thread is sleeping zZz...<br>]]>
-            </line>
-            <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (b935b43b63203f034c7cad9914d5910f)] -> xpath: //div[contains(.,'Street number')]/following-sibling::input] Text Value entered : 747 Taylor Ave<br>]]>
-            </line>
-            <line>
-              <![CDATA[Proxy element for: DefaultElementLocator 'By.xpath: //button[contains(.,'Okay, start my quote')]' clicked<br>]]>
-            </line>
-            <line>
-              <![CDATA[Actual value : Tell us about your vehicle(s)... >>><<< Expected value : Tell us about your vehicle(s)...<br>]]>
+              <![CDATA[this is an auto related test<br>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- autoQuoteTesting -->
-        <test-method status="PASS" signature="quttingBrowser()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@1c3a4799]" name="quttingBrowser" is-config="true" duration-ms="0" started-at="2022-02-05T04:02:30Z" finished-at="2022-02-05T04:02:30Z">
+        </test-method> <!-- testMethodAuto -->
+        <test-method status="PASS" signature="quttingBrowser()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@26aa12dd]" name="quttingBrowser" is-config="true" duration-ms="820" started-at="2022-02-08T04:13:57Z" finished-at="2022-02-08T04:13:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quttingBrowser -->
       </class> <!-- progressive.qa.auto.AutoQuoteTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- SmokeTest -->
+  </suite> <!-- SmokeSuite -->
 </testng-results>

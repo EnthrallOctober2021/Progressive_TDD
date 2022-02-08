@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [SmokeSuite]">
   <test thread-count="5" name="SmokeTest(failed)">
     <classes>
-      <class name="progressive.qa.auto.AutoQuoteTest">
+      <class name="progressive.qa.home.HomeQuoteTest">
         <methods>
-          <include name="autoQuoteTesting"/>
+          <include name="homeQuoteTexting"/>
           <include name="quttingBrowser"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- progressive.qa.auto.AutoQuoteTest -->
+      </class> <!-- progressive.qa.home.HomeQuoteTest -->
     </classes>
   </test> <!-- SmokeTest(failed) -->
 </suite> <!-- Failed suite [SmokeSuite] -->

@@ -1,7 +1,5 @@
 package progressive.qa.pages;
 
-import java.awt.event.KeyEvent;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -20,7 +18,7 @@ public class ZipCodePage {
 	private WebElement zipCodeText;
 	@FindBy(xpath = "//label[@for='zipCode_overlay_subproducts' and text()='Enter ZIP Code']")
 	private WebElement altZipCodeText;
-	@FindBy(xpath = "(//input[@name='ZipCode'])[1]")
+	@FindBy(xpath = "//input[@id='zipCode_overlay' and @name='ZipCode']")
 	private WebElement inputZipCode;
 	@FindBy(xpath = "(//input[@name='ZipCode'])[2]")
 	private WebElement altZipInput;
@@ -39,15 +37,10 @@ public class ZipCodePage {
 			BaseClass.commonActions.click(altZipInput);
 			BaseClass.commonActions.writeText(altZipInput, zipCode);
 			clickQuoteBtnStep(altGetQuoteBtn);
-		}else if(BaseClass.driver.getCurrentUrl().contains("https://www.progressive.com/#l")) {
+		}else if(BaseClass.driver.getCurrentUrl().contains("https://www.progressive.com/#l")
+				|| BaseClass.driver.getCurrentUrl().contains("https://www.progressive.com/home/home/#l")) {
 			getZipCodeTextStep(zipCodeText, expected);
-			BaseClass.commonActions.sleep(5);
-			BaseClass.robot.keyPress(KeyEvent.VK_1);
-			BaseClass.robot.keyPress(KeyEvent.VK_0);
-			BaseClass.robot.keyPress(KeyEvent.VK_4);
-			BaseClass.robot.keyPress(KeyEvent.VK_7);
-			BaseClass.robot.keyPress(KeyEvent.VK_3);
-			//commonMethods.writeText(zipCodePage.inputZipCode, "10473");
+			BaseClass.commonActions.writeText(inputZipCode, zipCode);
 			clickQuoteBtnStep(getQuoteBtn);
 		}else {
 			Assert.fail();
@@ -61,4 +54,5 @@ public class ZipCodePage {
 	public void zipCodePageSteps(String zipCode, String expected) {
 		zipCodeInputStep(zipCode, expected);
 	}
+	
 }

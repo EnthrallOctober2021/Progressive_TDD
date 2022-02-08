@@ -1,0 +1,19 @@
+Two types of policies:
+1. Individual - Auto, Home, Life
+2. Commercial - Worker Compensation, Company, (FBI, McDonalds)
+
+UW (under Writing) - Checking the eligibility. Credits, Driving History
+Claims - Complain and asking for compensation
+Actural - Calculate your premium
+
+Ques:
+1. how you are going to handle dynamic webElements?
+- Using List<WebElement>. call any element with their index, such as list.get(2)
+- List<WebElement> listOfElements = driver.findElements(locator)
+
+Annotations:
+TestNG - @Test, @BeforeMethod
+@Test annotation attributes - enabled = true/false, groups = string, priority = int, alwaysRun = true/false
+element.getAttribute()
+@Ignore will ignore test (enabled = false)
+https://testng.org/doc/documentation-main.html

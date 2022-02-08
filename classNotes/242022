@@ -1,7 +1,7 @@
 Reporter.log from testNG, which will write the logs in the reporting file
 Java Logger is for consol print, replacing System.out.println()
 
-interview Ques:
+Interview Ques:
 1. What are the locators we used in selenium?
 Ans - 8 locators. id, className, css, linkText, partialLinkText, tagName, name, xpath
 
