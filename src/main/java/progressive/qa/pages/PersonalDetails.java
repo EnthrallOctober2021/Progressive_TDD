@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import progressive.qa.base.BaseClass;
+import progressive.qa.data.AutoDataClass;
 
 public class PersonalDetails {
 
@@ -88,5 +89,18 @@ public class PersonalDetails {
 		inputCity(city);
 		startQuoteBtn();
 		checkAddressError(address);
+	}
+	
+	public void personalDetailsSteps(AutoDataClass autoData) {
+		getNameTextStep(autoData.getExpectedTitle());
+		firstNameInputStep(autoData.getFirstName());
+		lastNameInputStep(autoData.getLastName());
+		selectSuffix(autoData.getSuffix());
+		inputDOB(autoData.getDob());
+		inputAddress(autoData.getAddress());
+		inputApt(autoData.getApt());
+		inputCity(autoData.getCity());
+		startQuoteBtn();
+		checkAddressError(autoData.getAddress());
 	}
 }

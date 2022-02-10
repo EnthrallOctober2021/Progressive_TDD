@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [SmokeSuite]">
-  <test thread-count="5" name="SmokeTest(failed)">
+  <test thread-count="5" name="smoke(failed)">
+    <parameter name="browser" value="mybrowser"/>
+    <groups>
+      <run>
+        <exclude name="auto"/>
+      </run>
+    </groups>
     <classes>
-      <class name="progressive.qa.home.HomeQuoteTest">
+      <class name="progressive.qa.auto.AutoQuoteTest">
         <methods>
-          <include name="homeQuoteTexting"/>
-          <include name="quttingBrowser"/>
+          <include name="autoQuoteTestingWithExcelDataProbider"/>
           <include name="setUp"/>
+          <include name="quttingBrowser"/>
         </methods>
-      </class> <!-- progressive.qa.home.HomeQuoteTest -->
+      </class> <!-- progressive.qa.auto.AutoQuoteTest -->
     </classes>
-  </test> <!-- SmokeTest(failed) -->
+  </test> <!-- smoke(failed) -->
 </suite> <!-- Failed suite [SmokeSuite] -->

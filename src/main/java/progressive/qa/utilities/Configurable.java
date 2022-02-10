@@ -19,6 +19,8 @@ public class Configurable {
 	private int explicitWait;
 	private int pageLoadWait;
 	private int elementImplicitWait;
+	private String excelPath;
+	private int sheetNum;
 
 	private Configurable() {
 	}
@@ -40,10 +42,12 @@ public class Configurable {
 			properties = new Properties();
 			properties.load(fileInputStream);
 			url = properties.getProperty("url");
+			excelPath = properties.getProperty("excelPath");
 			try {
 				explicitWait = Integer.parseInt(properties.getProperty("explicitWait"));
 				pageLoadWait = Integer.parseInt(properties.getProperty("pageLoadWait"));
 				elementImplicitWait = Integer.parseInt(properties.getProperty("elementImplicitWait"));
+				sheetNum = Integer.parseInt(properties.getProperty("sheetNum"));
 			} catch (NumberFormatException e) {
 				e.printStackTrace();
 				Java_Logger.getLog("Check your config file @ " + new File(path).getAbsolutePath());
@@ -69,5 +73,13 @@ public class Configurable {
 
 	public int getElementImplicitWait() {
 		return elementImplicitWait;
+	}
+	
+	public String getExcelPath() {
+		return excelPath;
+	}
+	
+	public int getSheetNum() {
+		return sheetNum;
 	}
 }

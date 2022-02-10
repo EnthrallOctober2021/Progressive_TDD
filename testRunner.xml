@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="SmokeSuite">
-  <test thread-count="5" name="SmokeTest" parallel="false">
-    <classes>
-      <class name="progressive.qa.auto.AutoQuoteTest"/>
-      <class name="progressive.qa.home.HomeQuoteTest"/>
-    </classes>
-  </test> <!-- SmokeTest -->
+	<test name="smoke">
+	<parameter name="browser" value="mybrowser"></parameter>
+		<groups>
+			<run>
+				<exclude name="auto"></exclude>
+			</run>
+		</groups>
+		<classes>
+			<class name="progressive.qa.auto.AutoQuoteTest">
+				<methods>
+					<include name="autoQuoteTestingWithExcelDataProbider"></include>
+				</methods>
+			</class>
+			<class name="progressive.qa.home.HomeQuoteTest">
+				<methods>
+					<exclude name="homeQuoteTesting"></exclude>
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- SmokeTest -->
 </suite> <!-- SmokeSuite -->

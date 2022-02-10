@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 <title>TestNG Report</title>
@@ -7,12 +7,22 @@
 </head>
 <body>
 <table>
-<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">SmokeSuite</th></tr>
-<tr><td><a href="#t0">SmokeTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">6,730</td><td></td><td></td></tr>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">SmokeSuite</th></tr>
+<tr><td><a href="#t0">smoke</a></td><td class="num">1</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">7,148</td><td></td><td>auto</td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SmokeSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">SmokeTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">progressive.qa.auto.AutoQuoteTest</td><td><a href="#m0">testMethodAuto</a></td><td rowspan="1">1644293637468</td><td rowspan="1">6</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SmokeSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">smoke &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">progressive.qa.auto.AutoQuoteTest</td><td><a href="#m0">autoQuoteTestingWithExcelDataProbider</a></td><td rowspan="1">1644468420578</td><td rowspan="1">0</td></tr><tr><th colspan="4">smoke &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">progressive.qa.home.HomeQuoteTest</td><td><a href="#m1">homeTest</a></td><td rowspan="1">1644468426270</td><td rowspan="1">2</td></tr></tbody>
 </table>
-<h2>SmokeTest</h2><h3 id="m0">progressive.qa.auto.AutoQuoteTest#testMethodAuto</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">this is an auto related test<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>smoke</h2><h3 id="m0">progressive.qa.auto.AutoQuoteTest#autoQuoteTestingWithExcelDataProbider</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.lang.IllegalStateException: Cannot get a STRING value from a NUMERIC cell
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+Caused by: java.lang.IllegalStateException: Cannot get a STRING value from a NUMERIC cell
+	at org.apache.poi.xssf.usermodel.XSSFCell.typeMismatch(XSSFCell.java:1022)
+	at org.apache.poi.xssf.usermodel.XSSFCell.getRichStringCellValue(XSSFCell.java:393)
+	at org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue(XSSFCell.java:342)
+	at progressive.qa.utilities.ExcelReader.testData(ExcelReader.java:55)
+	at progressive.qa.auto.AutoQuoteTest.getAutoDataExcel(AutoQuoteTest.java:30)
+	... 25 more
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">progressive.qa.home.HomeQuoteTest#homeTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">This is a home test<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -1,0 +1,14 @@
+run by Groups - exclude
+run by methods - include, exclude
+missingDependenciesExceptions
+multiple browsers configuration from testng xml
+parameters annotations
+this = if local and global have shared the same name that need to initialize, we should use this keyword.
+iterator = iterator can iterate through list and set (those Data Structure inherited List and Set interface)
+- can go forward only. next(), hasNext()
+listIterator = list Iterator can iterate through list only (those Data Structure inherited List interface)
+- can go forward an backward. previous(), next(), hasNext()
+Ques:
+- What is data provider?
+- what are the annotations you used parameterized testing?
+- syntax of data provider
