@@ -1,5 +1,6 @@
 package progressive.qa.base;
 
+import java.lang.reflect.Method;
 import java.time.Duration;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -10,9 +11,15 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.Status;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import progressive.qa.common.CommonActions;
@@ -21,6 +28,8 @@ import progressive.qa.pages.PersonalDetails;
 import progressive.qa.pages.ProductsPage;
 import progressive.qa.pages.VehiclePage;
 import progressive.qa.pages.ZipCodePage;
+import progressive.qa.reporting.ExtentManager;
+import progressive.qa.reporting.ExtentTestManager;
 import progressive.qa.reporting.Logger;
 import progressive.qa.utilities.Configurable;
 
@@ -29,6 +38,7 @@ public class BaseClass {
 	public static WebDriver driver;
 	public static WebDriverWait wait;
 	public static JavascriptExecutor jsExecutor;
+	public static ExtentReports extent;
 	
 	public static CommonWaits waits;
 	public static CommonActions commonActions;
@@ -39,6 +49,11 @@ public class BaseClass {
 	public PersonalDetails personalDetails;
 	public VehiclePage vehiclePage;
 
+	@BeforeSuite
+	public void initiatinExtentReport() {
+		extent = ExtentManager.getInstance();
+	}
+	
 	@Parameters("browser")
 	@BeforeMethod
 	public void setUp(String browser) {
@@ -75,9 +90,35 @@ public class BaseClass {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(configurable.getExplicitWait()));
 	}
 	
+	@BeforeMethod
+	public void beforeEacchTest(Method method, Object[]testData) {
+		String className = method.getDeclaringClass().getSimpleName();
+		ExtentTestManager.startTest(method.getName());
+		ExtentTestManager.getTest().assignCategory(className);
+	}
+	
+	@AfterMethod
+	public void afterEachTest(ITestResult result) {
+		for(String testName : result.getMethod().getGroups()) {
+			ExtentTestManager.getTest().assignCategory(testName);
+		}
+		if(result.getStatus() == ITestResult.SUCCESS) {
+			ExtentTestManager.getTest().log(Status.PASS, "Test Passed");
+		}else if(result.getStatus() == ITestResult.FAILURE) {
+			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed");
+		}else {
+			ExtentTestManager.getTest().log(Status.SKIP, "Test Skipped");
+		}
+	}
+	
 	@AfterMethod
 	public void quttingBrowser() {
 		driver.quit();
+	}
+	
+	@AfterSuite
+	public void endReport() {
+		extent.flush();
 	}
 	
 	private void initElements() {

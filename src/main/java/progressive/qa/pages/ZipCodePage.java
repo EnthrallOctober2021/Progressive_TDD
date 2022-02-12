@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import progressive.qa.base.BaseClass;
+import progressive.qa.data.ZipCodeData;
 
 public class ZipCodePage {
 
@@ -55,4 +56,7 @@ public class ZipCodePage {
 		zipCodeInputStep(zipCode, expected);
 	}
 	
+	public void zipCodePageSteps(ZipCodeData zipCodeData) {
+		zipCodeInputStep(zipCodeData.getZipCode(), zipCodeData.getTitle());
+	}
 }

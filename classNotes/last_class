@@ -1,0 +1,6 @@
+POJO - Plain Old Java Object (no parent class, no dependencies)
+Data Provider - one data provider for one method.
+	- All test data must read from excel
+	- Two types of data provider. Iterator and Object [][]
+	
+ExtentReport - Look and Feel good interface. save the code in your framework

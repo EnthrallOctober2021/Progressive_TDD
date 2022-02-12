@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="SmokeSuite">
 	<test name="smoke">
-	<parameter name="browser" value="mybrowser"></parameter>
+		<parameter name="browser" value="mybrowser"></parameter>
 		<groups>
 			<run>
 				<exclude name="auto"></exclude>
@@ -11,12 +11,18 @@
 		<classes>
 			<class name="progressive.qa.auto.AutoQuoteTest">
 				<methods>
-					<include name="autoQuoteTestingWithExcelDataProbider"></include>
+					<exclude name="autoQuoteTestingWithIterator2DataProbider"></exclude>
 				</methods>
 			</class>
 			<class name="progressive.qa.home.HomeQuoteTest">
 				<methods>
-					<exclude name="homeQuoteTesting"></exclude>
+					<include name="homeQuoteTesting"></include>
+				</methods>
+			</class>
+			<class name="progressive.qa.auto.AutoQuoteWithExtentReport">
+				<methods>
+					<include name="test1"></include>
+					<include name="test2"></include>
 				</methods>
 			</class>
 		</classes>

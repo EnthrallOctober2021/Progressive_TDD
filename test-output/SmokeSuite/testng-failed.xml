@@ -9,13 +9,42 @@
       </run>
     </groups>
     <classes>
+      <class name="progressive.qa.home.HomeQuoteTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="beforeEacchTest"/>
+          <include name="quttingBrowser"/>
+          <include name="endReport"/>
+          <include name="afterEachTest"/>
+          <include name="homeQuoteTesting"/>
+          <include name="initiatinExtentReport"/>
+        </methods>
+      </class> <!-- progressive.qa.home.HomeQuoteTest -->
       <class name="progressive.qa.auto.AutoQuoteTest">
         <methods>
-          <include name="autoQuoteTestingWithExcelDataProbider"/>
           <include name="setUp"/>
+          <include name="beforeEacchTest"/>
           <include name="quttingBrowser"/>
+          <include name="testMethodAuto"/>
+          <include name="endReport"/>
+          <include name="afterEachTest"/>
+          <include name="initiatinExtentReport"/>
         </methods>
       </class> <!-- progressive.qa.auto.AutoQuoteTest -->
+      <class name="progressive.qa.auto.AutoQuoteWithExtentReport">
+        <methods>
+          <include name="extentSetup"/>
+          <include name="setUp"/>
+          <include name="finishReport"/>
+          <include name="beforeEacchTest"/>
+          <include name="quttingBrowser"/>
+          <include name="test2"/>
+          <include name="endReport"/>
+          <include name="afterEachTest"/>
+          <include name="initiatinExtentReport"/>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- progressive.qa.auto.AutoQuoteWithExtentReport -->
     </classes>
   </test> <!-- smoke(failed) -->
 </suite> <!-- Failed suite [SmokeSuite] -->

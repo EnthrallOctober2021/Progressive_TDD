@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-SmokeSuite">
-              <span class="suite-name border-skipped">SmokeSuite</span>
+              <span class="suite-name border-passed">SmokeSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,  1 skipped,  1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-SmokeSuite" class="hide-methods skipped suite-SmokeSuite"> (hide)</a> <!-- hide-methods skipped suite-SmokeSuite -->
-                      <a href="#" panel-name="suite-SmokeSuite" class="show-methods skipped suite-SmokeSuite"> (show)</a> <!-- show-methods skipped suite-SmokeSuite -->
-                    </span>
-                    <div class="method-list-content skipped suite-SmokeSuite">
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-SmokeSuite" title="progressive.qa.auto.AutoQuoteTest" hash-for-method="autoQuoteTestingWithExcelDataProbider">autoQuoteTestingWithExcelDataProbider</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-SmokeSuite -->
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,7 +104,22 @@
                     <div class="method-list-content passed suite-SmokeSuite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-SmokeSuite" title="progressive.qa.home.HomeQuoteTest" hash-for-method="homeTest">homeTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-SmokeSuite" title="progressive.qa.home.HomeQuoteTest" hash-for-method="homeQuoteTesting">homeQuoteTesting</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SmokeSuite" title="progressive.qa.auto.AutoQuoteWithExtentReport" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SmokeSuite" title="progressive.qa.auto.AutoQuoteWithExtentReport" hash-for-method="test2">test2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SmokeSuite" title="progressive.qa.auto.AutoQuoteTest" hash-for-method="testMethodAuto">testMethodAuto</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-SmokeSuite -->
@@ -133,32 +134,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SmokeSuite" class="panel SmokeSuite">
-          <div class="suite-SmokeSuite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">progressive.qa.auto.AutoQuoteTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="autoQuoteTestingWithExcelDataProbider">
-                  </a> <!-- autoQuoteTestingWithExcelDataProbider -->
-                  <span class="method-name">autoQuoteTestingWithExcelDataProbider</span>
-                  <div class="stack-trace">java.lang.RuntimeException: java.lang.IllegalStateException: Cannot get a STRING value from a NUMERIC cell
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-Caused by: java.lang.IllegalStateException: Cannot get a STRING value from a NUMERIC cell
-	at org.apache.poi.xssf.usermodel.XSSFCell.typeMismatch(XSSFCell.java:1022)
-	at org.apache.poi.xssf.usermodel.XSSFCell.getRichStringCellValue(XSSFCell.java:393)
-	at org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue(XSSFCell.java:342)
-	at progressive.qa.utilities.ExcelReader.testData(ExcelReader.java:55)
-	at progressive.qa.auto.AutoQuoteTest.getAutoDataExcel(AutoQuoteTest.java:30)
-	... 25 more
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-SmokeSuite-class-skipped -->
           <div class="suite-SmokeSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -167,9 +142,46 @@ Caused by: java.lang.IllegalStateException: Cannot get a STRING value from a NUM
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="homeTest">
-                  </a> <!-- homeTest -->
-                  <span class="method-name">homeTest</span>
+                  <a name="homeQuoteTesting">
+                  </a> <!-- homeQuoteTesting -->
+                  <span class="method-name">homeQuoteTesting</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SmokeSuite-class-passed -->
+          <div class="suite-SmokeSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">progressive.qa.auto.AutoQuoteTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMethodAuto">
+                  </a> <!-- testMethodAuto -->
+                  <span class="method-name">testMethodAuto</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SmokeSuite-class-passed -->
+          <div class="suite-SmokeSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">progressive.qa.auto.AutoQuoteWithExtentReport</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test2">
+                  </a> <!-- test2 -->
+                  <span class="method-name">test2</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -194,14 +206,20 @@ Caused by: java.lang.IllegalStateException: Cannot get a STRING value from a NUM
     &lt;classes&gt;
       &lt;class name=&quot;progressive.qa.auto.AutoQuoteTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;autoQuoteTestingWithExcelDataProbider&quot;/&gt;
+          &lt;exclude name=&quot;autoQuoteTestingWithIterator2DataProbider&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- progressive.qa.auto.AutoQuoteTest --&gt;
       &lt;class name=&quot;progressive.qa.home.HomeQuoteTest&quot;&gt;
         &lt;methods&gt;
-          &lt;exclude name=&quot;homeQuoteTesting&quot;/&gt;
+          &lt;include name=&quot;homeQuoteTesting&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- progressive.qa.home.HomeQuoteTest --&gt;
+      &lt;class name=&quot;progressive.qa.auto.AutoQuoteWithExtentReport&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;test1&quot;/&gt;
+          &lt;include name=&quot;test2&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- progressive.qa.auto.AutoQuoteWithExtentReport --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- smoke --&gt;
 &lt;/suite&gt; &lt;!-- SmokeSuite --&gt;
@@ -215,7 +233,7 @@ Caused by: java.lang.IllegalStateException: Cannot get a STRING value from a NUM
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">smoke (2 classes)</span>
+                <span class="test-name">smoke (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -229,7 +247,7 @@ Caused by: java.lang.IllegalStateException: Cannot get a STRING value from a NUM
               <span class="test-group-name">home</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">homeTest</span>
+                <span class="method-in-group-name">homeQuoteTesting</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -249,20 +267,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'homeTest')
+data.setCell(0, 1, 'homeQuoteTesting')
 data.setCell(0, 2, 'progressive.qa.home.HomeQuoteTest')
-data.setCell(0, 3, 2);
+data.setCell(0, 3, 15705);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'autoQuoteTestingWithExcelDataProbider')
+data.setCell(1, 1, 'testMethodAuto')
 data.setCell(1, 2, 'progressive.qa.auto.AutoQuoteTest')
-data.setCell(1, 3, 0);
+data.setCell(1, 3, 4);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'test2')
+data.setCell(2, 2, 'progressive.qa.auto.AutoQuoteWithExtentReport')
+data.setCell(2, 3, 2);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'test1')
+data.setCell(3, 2, 'progressive.qa.auto.AutoQuoteWithExtentReport')
+data.setCell(3, 3, 1);
 window.suiteTableData['SmokeSuite']= { tableData: data, tableDiv: 'times-div-SmokeSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 ms</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-SmokeSuite">
               </div> <!-- times-div-SmokeSuite -->
             </div> <!-- times-div -->
@@ -274,22 +300,37 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">homeTest</span>
+              <span class="reporter-method-name">testMethodAuto</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">This is a home test<br></span>
+                <span class="reporter-method-output">this is an auto related test 0<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">homeQuoteTesting</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Overlay Not Found<br></span>
+                <span class="reporter-method-output">src,Arrtibut Present in [[ChromeDriver: chrome on WINDOWS (6ecdd8bd110d42a1f5beba8bf0ec7aa3)] -> xpath: (//a[contains(.,'Home')])[2]/span/img]<br></span>
+                <span class="reporter-method-output">[[ChromeDriver: chrome on WINDOWS (6ecdd8bd110d42a1f5beba8bf0ec7aa3)] -> xpath: (//a[contains(.,'Home')])[2]] clicked<br></span>
+                <span class="reporter-method-output">Actual value : Enter ZIP Code >>><<< Expected value : Enter ZIP Code<br></span>
+                <span class="reporter-method-output">[[ChromeDriver: chrome on WINDOWS (6ecdd8bd110d42a1f5beba8bf0ec7aa3)] -> xpath: //input[@id='zipCode_overlay' and @name='ZipCode']] Text Value entered : 11411<br></span>
+                <span class="reporter-method-output">[[ChromeDriver: chrome on WINDOWS (6ecdd8bd110d42a1f5beba8bf0ec7aa3)] -> id: qsButton_overlay] clicked<br></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-SmokeSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">5 ignored methods</span>
+            <span class="header-content">11 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">progressive.qa.home.HomeQuoteTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">homeQuoteTesting</span>
+                <span class="ignored-method-name">initiatinExtentReport</span>
+                <br/>
+                <span class="ignored-method-name">endReport</span>
+                <br/>
+                <span class="ignored-method-name">homeTest</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -298,11 +339,24 @@ return data;
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">testMethodAuto1</span>
                 <br/>
-                <span class="ignored-method-name">testMethodAuto</span>
+                <span class="ignored-method-name">autoQuoteTesting</span>
+                <br/>
+                <span class="ignored-method-name">autoQuoteTestingWithIterator2DataProbider</span>
                 <br/>
                 <span class="ignored-method-name">autoQuoteTestingWithIteratorDataProbider</span>
                 <br/>
-                <span class="ignored-method-name">autoQuoteTesting</span>
+                <span class="ignored-method-name">autoQuoteTestingWithExcelDataProbider</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">progressive.qa.auto.AutoQuoteWithExtentReport</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">autoQuoteTestingWithExcelDataProbider</span>
+                <br/>
+                <span class="ignored-method-name">initiatinExtentReport</span>
+                <br/>
+                <span class="ignored-method-name">endReport</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -314,19 +368,112 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">progressive.qa.home.HomeQuoteTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">progressive.qa.auto.AutoQuoteTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">initiatinExtentReport</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEacchTest(public void progressive.qa.auto.AutoQuoteTest.testMethodAuto(), [])</span>
+                <span class="method-start">287 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(mybrowser)</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">298 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">homeTest</span>
-                <span class="method-start">5674 ms</span>
+                <span class="method-name">testMethodAuto</span>
+                <span class="method-start">5810 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTest([TestResult name=testMethodAuto status=SUCCESS method=AutoQuoteTest.testMethodAuto()[pri:0, instance...)</span>
+                <span class="method-start">5816 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">quttingBrowser</span>
+                <span class="method-start">5817 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">progressive.qa.home.HomeQuoteTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEacchTest(public void progressive.qa.home.HomeQuoteTest.homeQuoteTesting(), [])</span>
+                <span class="method-start">6516 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(mybrowser)</span>
+                <span class="method-start">6517 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">homeQuoteTesting</span>
+                <span class="method-start">9810 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTest([TestResult name=homeQuoteTesting status=SUCCESS method=HomeQuoteTest.homeQuoteTesting()[pri:0, inst...)</span>
+                <span class="method-start">25516 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">quttingBrowser</span>
+                <span class="method-start">25517 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">progressive.qa.auto.AutoQuoteWithExtentReport</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">extentSetup</span>
+                <span class="method-start">26235 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEacchTest(public void progressive.qa.auto.AutoQuoteWithExtentReport.test1(), [])</span>
+                <span class="method-start">26238 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(mybrowser)</span>
+                <span class="method-start">26239 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test1</span>
+                <span class="method-start">29542 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quttingBrowser</span>
-                <span class="method-start">5678 ms</span>
+                <span class="method-start">29544 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTest([TestResult name=test1 status=SUCCESS method=AutoQuoteWithExtentReport.test1()[pri:0, instance:progr...)</span>
+                <span class="method-start">29544 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEacchTest(public void progressive.qa.auto.AutoQuoteWithExtentReport.test2(), [])</span>
+                <span class="method-start">30209 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(mybrowser)</span>
+                <span class="method-start">30211 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test2</span>
+                <span class="method-start">33327 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTest([TestResult name=test2 status=SUCCESS method=AutoQuoteWithExtentReport.test2()[pri:0, instance:progr...)</span>
+                <span class="method-start">33329 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">quttingBrowser</span>
+                <span class="method-start">33330 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">finishReport</span>
+                <span class="method-start">34000 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">progressive.qa.auto.AutoQuoteTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">endReport</span>
+                <span class="method-start">34322 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

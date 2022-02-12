@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="progressive.qa.auto.AutoQuoteTest">
+      <class name="progressive.qa.auto.AutoQuoteWithExtentReport">
         <methods>
-          <include name="autoQuoteTesting"/>
-          <include name="quttingBrowser"/>
+          <include name="finishReport"/>
           <include name="setUp"/>
+          <include name="extentSetup"/>
+          <include name="quttingBrowser"/>
+          <include name="autoQuoteTestingWithExcelDataProbider"/>
         </methods>
-      </class> <!-- progressive.qa.auto.AutoQuoteTest -->
+      </class> <!-- progressive.qa.auto.AutoQuoteWithExtentReport -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
