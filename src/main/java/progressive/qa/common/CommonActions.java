@@ -1,13 +1,20 @@
 package progressive.qa.common;
 
+import java.io.File;
+import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptException;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import com.google.common.io.Files;
 import progressive.qa.base.BaseClass;
 import progressive.qa.reporting.Logger;
 
@@ -20,7 +27,7 @@ public class CommonActions {
 			Logger.log(element + " clicked");
 		} catch (NullPointerException | NoSuchElementException e) {
 			e.printStackTrace();
-			Logger.log(element + " Element Not Found");
+			Logger.log(element + " Element Not Found \n" + e.getLocalizedMessage());
 			Assert.fail();
 		}
 	}
@@ -33,7 +40,7 @@ public class CommonActions {
 			return element.getText();
 		} catch (NullPointerException | NoSuchElementException e) {
 			e.printStackTrace();
-			Logger.log(element + " Element Not Found");
+			Logger.log(element + " Element Not Found \n" + e.getLocalizedMessage());
 			return element + " : Element Not Found";
 		}
 	}
@@ -45,7 +52,7 @@ public class CommonActions {
 			Logger.log(element + " Text Value entered : " + value);
 		} catch (NullPointerException | NoSuchElementException e) {
 			e.printStackTrace();
-			Logger.log(element + " Element Not Found");
+			Logger.log(element + " Element Not Found  \n" + e.getLocalizedMessage());
 			Assert.fail();
 		}
 	}
@@ -58,7 +65,7 @@ public class CommonActions {
 			Logger.log(value + " : has been selected for element, " + element);
 		} catch (NullPointerException | NoSuchElementException e) {
 			e.printStackTrace();
-			Logger.log(element + " Element Not Found");
+			Logger.log(element + " Element Not Found \n" + e.getLocalizedMessage());
 			Assert.fail();
 		}
 	}
@@ -73,7 +80,7 @@ public class CommonActions {
 			}
 		} catch (NullPointerException | NoSuchElementException e) {
 			e.printStackTrace();
-			Logger.log(locator + " : Element not present");
+			Logger.log(locator + " : Element not present \n" + e.getLocalizedMessage());
 		}
 		return flag;
 	}
@@ -88,7 +95,7 @@ public class CommonActions {
 			}
 		} catch (NullPointerException | NoSuchElementException e) {
 			e.printStackTrace();
-			Logger.log(locator + " : Element not present");
+			Logger.log(locator + " : Element not present \n" + e.getLocalizedMessage());
 		}
 		return flag;
 	}
@@ -104,7 +111,7 @@ public class CommonActions {
 			}
 		} catch (NullPointerException | NoSuchElementException e) {
 			e.printStackTrace();
-			Logger.log(attr + ",Arrtibut Not Present in " + element);
+			Logger.log(attr + ",Arrtibut Not Present in " + element +"\n" + e.getLocalizedMessage());
 			return false;
 		}
 	}
@@ -133,7 +140,7 @@ public class CommonActions {
 			Logger.log("Scrolling into element : " + element + ", Succeed");
 		} catch (JavascriptException e) {
 			e.printStackTrace();
-			Logger.log("Scrolling into element : " + element + ", Failed");
+			Logger.log("Scrolling into element : " + element + ", Failed \n" + e.getLocalizedMessage());
 			Assert.fail();
 		}
 	}
@@ -144,7 +151,25 @@ public class CommonActions {
 			Logger.log("Thread is sleeping zZz...");
 		} catch (InterruptedException e) {
 			e.printStackTrace();
-			Logger.log("Sleeping interuppted...");
+			Logger.log("Sleeping interuppted...\n" + e.getLocalizedMessage());
 		}
+	}
+	
+	public String addScreenShotToLocal(String testName) {
+		Date date = new Date();
+		DateFormat dateFormat = new SimpleDateFormat("MM.dd.yyyy_HH.mm.ss");
+		String dateString = dateFormat.format(date);
+		
+		File newScreenShot = new File("screenShots/"+testName+"_"+dateString+"_errorShot.png");
+		TakesScreenshot screenshot = (TakesScreenshot) BaseClass.driver;
+		File srcLocation = screenshot.getScreenshotAs(OutputType.FILE);
+		try {
+			Files.copy(srcLocation, new File(newScreenShot.getAbsolutePath()));
+			Logger.log("Error Occured!!! \n"+"Screenshot has been saved here :" + newScreenShot.getAbsolutePath());
+		}catch(IOException e) {
+			e.printStackTrace();
+			Logger.log("Screenshot cannot saved \n" + e.getLocalizedMessage());
+		}
+		return newScreenShot.getAbsolutePath();
 	}
 }

@@ -38,7 +38,7 @@ public class BaseClass {
 	public static WebDriver driver;
 	public static WebDriverWait wait;
 	public static JavascriptExecutor jsExecutor;
-	public static ExtentReports extent;
+	private ExtentReports extent;
 	
 	public static CommonWaits waits;
 	public static CommonActions commonActions;
@@ -91,7 +91,7 @@ public class BaseClass {
 	}
 	
 	@BeforeMethod
-	public void beforeEacchTest(Method method, Object[]testData) {
+	public void beforeEachTest(Method method) {
 		String className = method.getDeclaringClass().getSimpleName();
 		ExtentTestManager.startTest(method.getName());
 		ExtentTestManager.getTest().assignCategory(className);
@@ -105,14 +105,16 @@ public class BaseClass {
 		if(result.getStatus() == ITestResult.SUCCESS) {
 			ExtentTestManager.getTest().log(Status.PASS, "Test Passed");
 		}else if(result.getStatus() == ITestResult.FAILURE) {
+			ExtentTestManager.getTest().addScreenCaptureFromPath(commonActions.addScreenShotToLocal(result.getName()));
 			ExtentTestManager.getTest().log(Status.FAIL, "Test Failed");
+			//commonActions.addScreenShotToLocal(); // Will add to local only
 		}else {
 			ExtentTestManager.getTest().log(Status.SKIP, "Test Skipped");
 		}
+		quttingBrowser();
 	}
 	
-	@AfterMethod
-	public void quttingBrowser() {
+	private void quttingBrowser() {
 		driver.quit();
 	}
 	

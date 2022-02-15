@@ -4,3 +4,12 @@ Data Provider - one data provider for one method.
 	- Two types of data provider. Iterator and Object [][]
 	
 ExtentReport - Look and Feel good interface. save the code in your framework
+
+Difference between TestNG and JUnit
+- There is no BeforeSuite or AfterSuite annotation in JUnit
+
+TestNG listeners
+- It will listen to all the @Test during runtime and before/after execution
+
+How to take screenShot in Selenium?
+- Using TakeScreenshot interface from Selenium and cast the WebDriver

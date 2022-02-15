@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="11" total="15" passed="4">
+<testng-results skipped="0" failed="1" ignored="11" total="15" passed="3">
   <reporter-output>
     <line>
       <![CDATA[My OS version is Windows 10<br>]]>
@@ -14,19 +14,23 @@
       <![CDATA[Overlay Not Found<br>]]>
     </line>
     <line>
-      <![CDATA[src,Arrtibut Present in [[ChromeDriver: chrome on WINDOWS (6ecdd8bd110d42a1f5beba8bf0ec7aa3)] -> xpath: (//a[contains(.,'Home')])[2]/span/img]<br>]]>
+      <![CDATA[src,Arrtibut Present in [[ChromeDriver: chrome on WINDOWS (bd42e3cc8adaa80c9772a568389c280e)] -> xpath: (//a[contains(.,'Home')])[2]/span/img]<br>]]>
     </line>
     <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (6ecdd8bd110d42a1f5beba8bf0ec7aa3)] -> xpath: (//a[contains(.,'Home')])[2]] clicked<br>]]>
+      <![CDATA[[[ChromeDriver: chrome on WINDOWS (bd42e3cc8adaa80c9772a568389c280e)] -> xpath: (//a[contains(.,'Home')])[2]] clicked<br>]]>
     </line>
     <line>
       <![CDATA[Actual value : Enter ZIP Code >>><<< Expected value : Enter ZIP Code<br>]]>
     </line>
     <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (6ecdd8bd110d42a1f5beba8bf0ec7aa3)] -> xpath: //input[@id='zipCode_overlay' and @name='ZipCode']] Text Value entered : 11411<br>]]>
+      <![CDATA[[[ChromeDriver: chrome on WINDOWS (bd42e3cc8adaa80c9772a568389c280e)] -> xpath: //input[@id='zipCode_overlay' and @name='ZipCode']] Text Value entered : 11411<br>]]>
     </line>
     <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (6ecdd8bd110d42a1f5beba8bf0ec7aa3)] -> id: qsButton_overlay] clicked<br>]]>
+      <![CDATA[[[ChromeDriver: chrome on WINDOWS (bd42e3cc8adaa80c9772a568389c280e)] -> id: qsButton_overlay] clicked<br>]]>
+    </line>
+    <line>
+      <![CDATA[Error Occured!!! 
+Screenshot has been saved here :C:\Users\mdnas\eclipse-workspace\progressive.qa\screenShots\homeQuoteTesting_02.14.2022_22.33.56_errorShot.png<br>]]>
     </line>
     <line>
       <![CDATA[My OS version is Windows 10<br>]]>
@@ -35,31 +39,26 @@
       <![CDATA[My OS version is Windows 10<br>]]>
     </line>
   </reporter-output>
-  <suite name="SmokeSuite" duration-ms="34043" started-at="2022-02-12T00:11:57 EST" finished-at="2022-02-12T00:12:31 EST">
+  <suite name="SmokeSuite" duration-ms="37466" started-at="2022-02-14T22:33:29 EST" finished-at="2022-02-14T22:34:06 EST">
     <groups>
       <group name="home">
         <method signature="HomeQuoteTest.homeQuoteTesting()[pri:0, instance:progressive.qa.home.HomeQuoteTest@1445d7f]" name="homeQuoteTesting" class="progressive.qa.home.HomeQuoteTest"/>
       </group> <!-- home -->
     </groups>
-    <test name="smoke" duration-ms="34043" started-at="2022-02-12T00:11:57 EST" finished-at="2022-02-12T00:12:31 EST">
+    <test name="smoke" duration-ms="37466" started-at="2022-02-14T22:33:29 EST" finished-at="2022-02-14T22:34:06 EST">
       <class name="progressive.qa.home.HomeQuoteTest">
-        <test-method status="PASS" signature="beforeEacchTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:progressive.qa.home.HomeQuoteTest@1445d7f]" name="beforeEacchTest" is-config="true" duration-ms="1" started-at="2022-02-12T00:12:03 EST" finished-at="2022-02-12T00:12:03 EST">
+        <test-method status="PASS" signature="beforeEachTest(java.lang.reflect.Method)[pri:0, instance:progressive.qa.home.HomeQuoteTest@1445d7f]" name="beforeEachTest" is-config="true" duration-ms="1" started-at="2022-02-14T22:33:37 EST" finished-at="2022-02-14T22:33:37 EST">
           <params>
             <param index="0">
               <value>
                 <![CDATA[public void progressive.qa.home.HomeQuoteTest.homeQuoteTesting()]]>
               </value>
             </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@41294371]]>
-              </value>
-            </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeEacchTest -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:progressive.qa.home.HomeQuoteTest@1445d7f]" name="setUp" is-config="true" duration-ms="3293" started-at="2022-02-12T00:12:03 EST" finished-at="2022-02-12T00:12:06 EST">
+        </test-method> <!-- beforeEachTest -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:progressive.qa.home.HomeQuoteTest@1445d7f]" name="setUp" is-config="true" duration-ms="3370" started-at="2022-02-14T22:33:37 EST" finished-at="2022-02-14T22:33:40 EST">
           <params>
             <param index="0">
               <value>
@@ -73,66 +72,101 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="homeQuoteTesting()[pri:0, instance:progressive.qa.home.HomeQuoteTest@1445d7f]" name="homeQuoteTesting" duration-ms="15705" started-at="2022-02-12T00:12:06 EST" finished-at="2022-02-12T00:12:22 EST">
+        <test-method status="FAIL" signature="homeQuoteTesting()[pri:0, instance:progressive.qa.home.HomeQuoteTest@1445d7f]" name="homeQuoteTesting" duration-ms="15716" started-at="2022-02-14T22:33:40 EST" finished-at="2022-02-14T22:33:56 EST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.fail(Assert.java:115)
+at progressive.qa.home.HomeQuoteTest.homeQuoteTesting(HomeQuoteTest.java:13)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
               <![CDATA[Overlay Not Found<br>]]>
             </line>
             <line>
-              <![CDATA[src,Arrtibut Present in [[ChromeDriver: chrome on WINDOWS (6ecdd8bd110d42a1f5beba8bf0ec7aa3)] -> xpath: (//a[contains(.,'Home')])[2]/span/img]<br>]]>
+              <![CDATA[src,Arrtibut Present in [[ChromeDriver: chrome on WINDOWS (bd42e3cc8adaa80c9772a568389c280e)] -> xpath: (//a[contains(.,'Home')])[2]/span/img]<br>]]>
             </line>
             <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (6ecdd8bd110d42a1f5beba8bf0ec7aa3)] -> xpath: (//a[contains(.,'Home')])[2]] clicked<br>]]>
+              <![CDATA[[[ChromeDriver: chrome on WINDOWS (bd42e3cc8adaa80c9772a568389c280e)] -> xpath: (//a[contains(.,'Home')])[2]] clicked<br>]]>
             </line>
             <line>
               <![CDATA[Actual value : Enter ZIP Code >>><<< Expected value : Enter ZIP Code<br>]]>
             </line>
             <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (6ecdd8bd110d42a1f5beba8bf0ec7aa3)] -> xpath: //input[@id='zipCode_overlay' and @name='ZipCode']] Text Value entered : 11411<br>]]>
+              <![CDATA[[[ChromeDriver: chrome on WINDOWS (bd42e3cc8adaa80c9772a568389c280e)] -> xpath: //input[@id='zipCode_overlay' and @name='ZipCode']] Text Value entered : 11411<br>]]>
             </line>
             <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (6ecdd8bd110d42a1f5beba8bf0ec7aa3)] -> id: qsButton_overlay] clicked<br>]]>
+              <![CDATA[[[ChromeDriver: chrome on WINDOWS (bd42e3cc8adaa80c9772a568389c280e)] -> id: qsButton_overlay] clicked<br>]]>
             </line>
           </reporter-output>
         </test-method> <!-- homeQuoteTesting -->
-        <test-method status="PASS" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:progressive.qa.home.HomeQuoteTest@1445d7f]" name="afterEachTest" is-config="true" duration-ms="0" started-at="2022-02-12T00:12:22 EST" finished-at="2022-02-12T00:12:22 EST">
+        <test-method status="PASS" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:progressive.qa.home.HomeQuoteTest@1445d7f]" name="afterEachTest" is-config="true" duration-ms="968" started-at="2022-02-14T22:33:56 EST" finished-at="2022-02-14T22:33:57 EST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=homeQuoteTesting status=SUCCESS method=HomeQuoteTest.homeQuoteTesting()[pri:0, instance:progressive.qa.home.HomeQuoteTest@1445d7f] output=Overlay Not Found<br>]]]>
+                <![CDATA[[TestResult name=homeQuoteTesting status=FAILURE method=HomeQuoteTest.homeQuoteTesting()[pri:0, instance:progressive.qa.home.HomeQuoteTest@1445d7f] output=Overlay Not Found<br>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[Error Occured!!! 
+Screenshot has been saved here :C:\Users\mdnas\eclipse-workspace\progressive.qa\screenShots\homeQuoteTesting_02.14.2022_22.33.56_errorShot.png<br>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- afterEachTest -->
-        <test-method status="PASS" signature="quttingBrowser()[pri:0, instance:progressive.qa.home.HomeQuoteTest@1445d7f]" name="quttingBrowser" is-config="true" duration-ms="715" started-at="2022-02-12T00:12:22 EST" finished-at="2022-02-12T00:12:23 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quttingBrowser -->
       </class> <!-- progressive.qa.home.HomeQuoteTest -->
       <class name="progressive.qa.auto.AutoQuoteWithExtentReport">
-        <test-method status="PASS" signature="extentSetup()[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="extentSetup" is-config="true" duration-ms="2" started-at="2022-02-12T00:12:23 EST" finished-at="2022-02-12T00:12:23 EST">
+        <test-method status="PASS" signature="extentSetup()[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="extentSetup" is-config="true" duration-ms="2" started-at="2022-02-14T22:33:57 EST" finished-at="2022-02-14T22:33:57 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentSetup -->
-        <test-method status="PASS" signature="beforeEacchTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="beforeEacchTest" is-config="true" duration-ms="1" started-at="2022-02-12T00:12:23 EST" finished-at="2022-02-12T00:12:23 EST">
+        <test-method status="PASS" signature="beforeEachTest(java.lang.reflect.Method)[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="beforeEachTest" is-config="true" duration-ms="1" started-at="2022-02-14T22:33:57 EST" finished-at="2022-02-14T22:33:57 EST">
           <params>
             <param index="0">
               <value>
                 <![CDATA[public void progressive.qa.auto.AutoQuoteWithExtentReport.test1()]]>
               </value>
             </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@4996c99]]>
-              </value>
-            </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeEacchTest -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="setUp" is-config="true" duration-ms="3303" started-at="2022-02-12T00:12:23 EST" finished-at="2022-02-12T00:12:26 EST">
+        </test-method> <!-- beforeEachTest -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="setUp" is-config="true" duration-ms="4601" started-at="2022-02-14T22:33:57 EST" finished-at="2022-02-14T22:34:01 EST">
           <params>
             <param index="0">
               <value>
@@ -146,15 +180,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="test1" duration-ms="1" started-at="2022-02-12T00:12:26 EST" finished-at="2022-02-12T00:12:26 EST">
+        <test-method status="PASS" signature="test1()[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="test1" duration-ms="1" started-at="2022-02-14T22:34:01 EST" finished-at="2022-02-14T22:34:01 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="quttingBrowser()[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="quttingBrowser" is-config="true" duration-ms="664" started-at="2022-02-12T00:12:26 EST" finished-at="2022-02-12T00:12:27 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quttingBrowser -->
-        <test-method status="PASS" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="afterEachTest" is-config="true" duration-ms="0" started-at="2022-02-12T00:12:26 EST" finished-at="2022-02-12T00:12:26 EST">
+        <test-method status="PASS" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="afterEachTest" is-config="true" duration-ms="752" started-at="2022-02-14T22:34:01 EST" finished-at="2022-02-14T22:34:02 EST">
           <params>
             <param index="0">
               <value>
@@ -165,23 +195,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->
-        <test-method status="PASS" signature="beforeEacchTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="beforeEacchTest" is-config="true" duration-ms="2" started-at="2022-02-12T00:12:27 EST" finished-at="2022-02-12T00:12:27 EST">
+        <test-method status="PASS" signature="beforeEachTest(java.lang.reflect.Method)[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="beforeEachTest" is-config="true" duration-ms="0" started-at="2022-02-14T22:34:02 EST" finished-at="2022-02-14T22:34:02 EST">
           <params>
             <param index="0">
               <value>
                 <![CDATA[public void progressive.qa.auto.AutoQuoteWithExtentReport.test2()]]>
               </value>
             </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@1b956cfa]]>
-              </value>
-            </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeEacchTest -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="setUp" is-config="true" duration-ms="3116" started-at="2022-02-12T00:12:27 EST" finished-at="2022-02-12T00:12:30 EST">
+        </test-method> <!-- beforeEachTest -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="setUp" is-config="true" duration-ms="3255" started-at="2022-02-14T22:34:02 EST" finished-at="2022-02-14T22:34:05 EST">
           <params>
             <param index="0">
               <value>
@@ -195,11 +220,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="test2" duration-ms="2" started-at="2022-02-12T00:12:30 EST" finished-at="2022-02-12T00:12:30 EST">
+        <test-method status="PASS" signature="test2()[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="test2" duration-ms="1" started-at="2022-02-14T22:34:05 EST" finished-at="2022-02-14T22:34:05 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="afterEachTest" is-config="true" duration-ms="1" started-at="2022-02-12T00:12:30 EST" finished-at="2022-02-12T00:12:30 EST">
+        <test-method status="PASS" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="afterEachTest" is-config="true" duration-ms="740" started-at="2022-02-14T22:34:05 EST" finished-at="2022-02-14T22:34:06 EST">
           <params>
             <param index="0">
               <value>
@@ -210,37 +235,28 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->
-        <test-method status="PASS" signature="quttingBrowser()[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="quttingBrowser" is-config="true" duration-ms="669" started-at="2022-02-12T00:12:30 EST" finished-at="2022-02-12T00:12:30 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quttingBrowser -->
-        <test-method status="PASS" signature="finishReport()[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="finishReport" is-config="true" duration-ms="304" started-at="2022-02-12T00:12:30 EST" finished-at="2022-02-12T00:12:31 EST">
+        <test-method status="PASS" signature="finishReport()[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="finishReport" is-config="true" duration-ms="325" started-at="2022-02-14T22:34:06 EST" finished-at="2022-02-14T22:34:06 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finishReport -->
       </class> <!-- progressive.qa.auto.AutoQuoteWithExtentReport -->
       <class name="progressive.qa.auto.AutoQuoteTest">
-        <test-method status="PASS" signature="initiatinExtentReport()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@3444d69d]" name="initiatinExtentReport" is-config="true" duration-ms="260" started-at="2022-02-12T00:11:56 EST" finished-at="2022-02-12T00:11:57 EST">
+        <test-method status="PASS" signature="initiatinExtentReport()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@3444d69d]" name="initiatinExtentReport" is-config="true" duration-ms="272" started-at="2022-02-14T22:33:29 EST" finished-at="2022-02-14T22:33:29 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiatinExtentReport -->
-        <test-method status="PASS" signature="beforeEacchTest(java.lang.reflect.Method,[Ljava.lang.Object;)[pri:0, instance:progressive.qa.auto.AutoQuoteTest@3444d69d]" name="beforeEacchTest" is-config="true" duration-ms="11" started-at="2022-02-12T00:11:57 EST" finished-at="2022-02-12T00:11:57 EST">
+        <test-method status="PASS" signature="beforeEachTest(java.lang.reflect.Method)[pri:0, instance:progressive.qa.auto.AutoQuoteTest@3444d69d]" name="beforeEachTest" is-config="true" duration-ms="13" started-at="2022-02-14T22:33:29 EST" finished-at="2022-02-14T22:33:29 EST">
           <params>
             <param index="0">
               <value>
                 <![CDATA[public void progressive.qa.auto.AutoQuoteTest.testMethodAuto()]]>
               </value>
             </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@315f09ef]]>
-              </value>
-            </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeEacchTest -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:progressive.qa.auto.AutoQuoteTest@3444d69d]" name="setUp" is-config="true" duration-ms="5512" started-at="2022-02-12T00:11:57 EST" finished-at="2022-02-12T00:12:02 EST">
+        </test-method> <!-- beforeEachTest -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:progressive.qa.auto.AutoQuoteTest@3444d69d]" name="setUp" is-config="true" duration-ms="6871" started-at="2022-02-14T22:33:29 EST" finished-at="2022-02-14T22:33:36 EST">
           <params>
             <param index="0">
               <value>
@@ -254,14 +270,14 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testMethodAuto()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@3444d69d]" name="testMethodAuto" duration-ms="4" started-at="2022-02-12T00:12:02 EST" depends-on-methods="progressive.qa.auto.AutoQuoteTest.autoQuoteTesting" finished-at="2022-02-12T00:12:02 EST">
+        <test-method status="PASS" signature="testMethodAuto()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@3444d69d]" name="testMethodAuto" duration-ms="5" started-at="2022-02-14T22:33:36 EST" depends-on-methods="progressive.qa.auto.AutoQuoteTest.autoQuoteTesting" finished-at="2022-02-14T22:33:36 EST">
           <reporter-output>
             <line>
               <![CDATA[this is an auto related test 0<br>]]>
             </line>
           </reporter-output>
         </test-method> <!-- testMethodAuto -->
-        <test-method status="PASS" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:progressive.qa.auto.AutoQuoteTest@3444d69d]" name="afterEachTest" is-config="true" duration-ms="1" started-at="2022-02-12T00:12:02 EST" finished-at="2022-02-12T00:12:02 EST">
+        <test-method status="PASS" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:progressive.qa.auto.AutoQuoteTest@3444d69d]" name="afterEachTest" is-config="true" duration-ms="799" started-at="2022-02-14T22:33:36 EST" finished-at="2022-02-14T22:33:37 EST">
           <params>
             <param index="0">
               <value>
@@ -272,11 +288,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->
-        <test-method status="PASS" signature="quttingBrowser()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@3444d69d]" name="quttingBrowser" is-config="true" duration-ms="693" started-at="2022-02-12T00:12:02 EST" finished-at="2022-02-12T00:12:03 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quttingBrowser -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@3444d69d]" name="endReport" is-config="true" duration-ms="108" started-at="2022-02-12T00:12:31 EST" finished-at="2022-02-12T00:12:31 EST">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@3444d69d]" name="endReport" is-config="true" duration-ms="110" started-at="2022-02-14T22:34:06 EST" finished-at="2022-02-14T22:34:06 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

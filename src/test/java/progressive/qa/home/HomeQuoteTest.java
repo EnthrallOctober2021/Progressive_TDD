@@ -10,6 +10,7 @@ public class HomeQuoteTest extends BaseClass{
 	public void homeQuoteTesting() {
 		productsPage.productPageHomeSteps();
 		zipCodePage.zipCodePageSteps("11411","Enter ZIP Code");
+		org.testng.Assert.fail();
 	}
 	
 	@Test(enabled = true, groups = {"home"})
