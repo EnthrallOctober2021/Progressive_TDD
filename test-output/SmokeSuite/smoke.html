@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Feb 14 22:33:29 EST 2022</td>
+<td>Started on:</td><td>Sun Mar 27 22:22:56 EDT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>37 seconds (37466 ms)</td>
+<tr><td>Total time:</td><td>66 seconds (66541 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,23 +76,33 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='progressive.qa.home.HomeQuoteTest.homeQuoteTesting()'><b>homeQuoteTesting</b><br>Test class: progressive.qa.home.HomeQuoteTest<br/>
-<a href="#Output-2052452680" onClick='toggleBox("Output-2052452680", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-680319659" onClick='toggleBox("Output-680319659", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2052452680" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2052452680">
+<a href="#Output-680319659" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-680319659">
 Overlay Not Found<br><br/>
-src,Arrtibut Present in [[ChromeDriver: chrome on WINDOWS (bd42e3cc8adaa80c9772a568389c280e)] -> xpath: (//a[contains(.,'Home')])[2]/span/img]<br><br/>
-[[ChromeDriver: chrome on WINDOWS (bd42e3cc8adaa80c9772a568389c280e)] -> xpath: (//a[contains(.,'Home')])[2]] clicked<br><br/>
+src,Arrtibut Not Present in Proxy element for: DefaultElementLocator 'By.xpath: (//a[contains(.,'Home')])[2]/span/img'
+no such element: Unable to locate element: {"method":"xpath","selector":"(//a[contains(.,'Home')])[2]/span/img"}
+  (Session info: chrome=99.0.4844.82)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'NAS', ip: '192.168.1.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cc141270f0f0381b06c7c561e94c984c, findElement {using=xpath, value=(//a[contains(.,'Home')])[2]/span/img}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\mdnas\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50817}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50817/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cc141270f0f0381b06c7c561e94c984c<br><br/>
+[[ChromeDriver: chrome on WINDOWS (cc141270f0f0381b06c7c561e94c984c)] -> xpath: (//a[contains(.,'Property')])[1]] clicked<br><br/>
 Actual value : Enter ZIP Code >>><<< Expected value : Enter ZIP Code<br><br/>
-[[ChromeDriver: chrome on WINDOWS (bd42e3cc8adaa80c9772a568389c280e)] -> xpath: //input[@id='zipCode_overlay' and @name='ZipCode']] Text Value entered : 11411<br><br/>
-[[ChromeDriver: chrome on WINDOWS (bd42e3cc8adaa80c9772a568389c280e)] -> id: qsButton_overlay] clicked<br><br/>
+[[ChromeDriver: chrome on WINDOWS (cc141270f0f0381b06c7c561e94c984c)] -> xpath: (//input[@name='ZipCode'])[2]] clicked<br><br/>
+[[ChromeDriver: chrome on WINDOWS (cc141270f0f0381b06c7c561e94c984c)] -> xpath: (//input[@name='ZipCode'])[2]] Text Value entered : 11411<br><br/>
+[[ChromeDriver: chrome on WINDOWS (cc141270f0f0381b06c7c561e94c984c)] -> id: qsButton_overlay_subproducts] clicked<br><br/>
 </div>
 </td>
 <td><div><pre>java.lang.AssertionError: null
 	at progressive.qa.home.HomeQuoteTest.homeQuoteTesting(HomeQuoteTest.java:13)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2052452680", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2052452680'><pre>java.lang.AssertionError: null
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace680319659", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace680319659'><pre>java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.fail(Assert.java:115)
 	at progressive.qa.home.HomeQuoteTest.homeQuoteTesting(HomeQuoteTest.java:13)
@@ -125,8 +135,8 @@ Actual value : Enter ZIP Code >>><<< Expected value : Enter ZIP Code<br><br/>
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>15</td>
-<td>progressive.qa.home.HomeQuoteTest@1445d7f</td></tr>
+<td>45</td>
+<td>progressive.qa.home.HomeQuoteTest@6c3f5566</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -136,27 +146,27 @@ Actual value : Enter ZIP Code >>><<< Expected value : Enter ZIP Code<br><br/>
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='progressive.qa.auto.AutoQuoteWithExtentReport.test1()'><b>test1</b><br>Test class: progressive.qa.auto.AutoQuoteWithExtentReport</td>
+<td></td>
+<td>0</td>
+<td>progressive.qa.auto.AutoQuoteWithExtentReport@12405818</td></tr>
+<tr>
 <td title='progressive.qa.auto.AutoQuoteWithExtentReport.test2()'><b>test2</b><br>Test class: progressive.qa.auto.AutoQuoteWithExtentReport</td>
 <td></td>
 <td>0</td>
-<td>progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e</td></tr>
+<td>progressive.qa.auto.AutoQuoteWithExtentReport@12405818</td></tr>
 <tr>
 <td title='progressive.qa.auto.AutoQuoteTest.testMethodAuto()'><b>testMethodAuto</b><br>Test class: progressive.qa.auto.AutoQuoteTest<br/>
-<a href="#Output-1868987089" onClick='toggleBox("Output-1868987089", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-2007138812" onClick='toggleBox("Output-2007138812", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1868987089" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1868987089">
+<a href="#Output-2007138812" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2007138812">
 this is an auto related test 0<br><br/>
 </div>
 </td>
 <td></td>
 <td>0</td>
-<td>progressive.qa.auto.AutoQuoteTest@3444d69d</td></tr>
-<tr>
-<td title='progressive.qa.auto.AutoQuoteWithExtentReport.test1()'><b>test1</b><br>Test class: progressive.qa.auto.AutoQuoteWithExtentReport</td>
-<td></td>
-<td>0</td>
-<td>progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e</td></tr>
+<td>progressive.qa.auto.AutoQuoteTest@6a79c292</td></tr>
 </table><p>
 </body>
 </html>

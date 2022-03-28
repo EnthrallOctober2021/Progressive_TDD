@@ -2,7 +2,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="SmokeSuite">
 	<test name="smoke">
-		<parameter name="browser" value="mybrowser"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="platform" value="default"></parameter>
 		<groups>
 			<run>
 				<exclude name="auto"></exclude>

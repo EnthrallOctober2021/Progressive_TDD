@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test thread-count="1" verbose="0" name="Surefire test(failed)">
+    <classes>
+      <class name="progressive.qa.home.HomeQuoteTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="homeTest"/>
+          <include name="beforeEachTest"/>
+          <include name="endReport"/>
+          <include name="afterEachTest"/>
+          <include name="initiatinExtentReport"/>
+          <include name="homeQuoteTesting"/>
+        </methods>
+      </class> <!-- progressive.qa.home.HomeQuoteTest -->
+      <class name="progressive.qa.auto.AutoQuoteTest">
+        <methods>
+          <include name="autoQuoteTestingWithExcelDataProbider"/>
+          <include name="setUp"/>
+          <include name="autoQuoteTestingWithIteratorDataProbider"/>
+          <include name="testMethodAuto"/>
+          <include name="testMethodAuto1"/>
+          <include name="autoQuoteTestingWithIterator2DataProbider"/>
+          <include name="beforeEachTest"/>
+          <include name="endReport"/>
+          <include name="afterEachTest"/>
+          <include name="autoQuoteTesting"/>
+          <include name="initiatinExtentReport"/>
+        </methods>
+      </class> <!-- progressive.qa.auto.AutoQuoteTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

@@ -14,23 +14,35 @@
       <![CDATA[Overlay Not Found<br>]]>
     </line>
     <line>
-      <![CDATA[src,Arrtibut Present in [[ChromeDriver: chrome on WINDOWS (bd42e3cc8adaa80c9772a568389c280e)] -> xpath: (//a[contains(.,'Home')])[2]/span/img]<br>]]>
+      <![CDATA[src,Arrtibut Not Present in Proxy element for: DefaultElementLocator 'By.xpath: (//a[contains(.,'Home')])[2]/span/img'
+no such element: Unable to locate element: {"method":"xpath","selector":"(//a[contains(.,'Home')])[2]/span/img"}
+  (Session info: chrome=99.0.4844.82)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'NAS', ip: '192.168.1.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cc141270f0f0381b06c7c561e94c984c, findElement {using=xpath, value=(//a[contains(.,'Home')])[2]/span/img}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\mdnas\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50817}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50817/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cc141270f0f0381b06c7c561e94c984c<br>]]>
     </line>
     <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (bd42e3cc8adaa80c9772a568389c280e)] -> xpath: (//a[contains(.,'Home')])[2]] clicked<br>]]>
+      <![CDATA[[[ChromeDriver: chrome on WINDOWS (cc141270f0f0381b06c7c561e94c984c)] -> xpath: (//a[contains(.,'Property')])[1]] clicked<br>]]>
     </line>
     <line>
       <![CDATA[Actual value : Enter ZIP Code >>><<< Expected value : Enter ZIP Code<br>]]>
     </line>
     <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (bd42e3cc8adaa80c9772a568389c280e)] -> xpath: //input[@id='zipCode_overlay' and @name='ZipCode']] Text Value entered : 11411<br>]]>
+      <![CDATA[[[ChromeDriver: chrome on WINDOWS (cc141270f0f0381b06c7c561e94c984c)] -> xpath: (//input[@name='ZipCode'])[2]] clicked<br>]]>
     </line>
     <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (bd42e3cc8adaa80c9772a568389c280e)] -> id: qsButton_overlay] clicked<br>]]>
+      <![CDATA[[[ChromeDriver: chrome on WINDOWS (cc141270f0f0381b06c7c561e94c984c)] -> xpath: (//input[@name='ZipCode'])[2]] Text Value entered : 11411<br>]]>
+    </line>
+    <line>
+      <![CDATA[[[ChromeDriver: chrome on WINDOWS (cc141270f0f0381b06c7c561e94c984c)] -> id: qsButton_overlay_subproducts] clicked<br>]]>
     </line>
     <line>
       <![CDATA[Error Occured!!! 
-Screenshot has been saved here :C:\Users\mdnas\eclipse-workspace\progressive.qa\screenShots\homeQuoteTesting_02.14.2022_22.33.56_errorShot.png<br>]]>
+Screenshot has been saved here :C:\Users\mdnas\eclipse-workspace\progressive.qa\screenShots\homeQuoteTesting_03.27.2022_22.23.52_errorShot.png<br>]]>
     </line>
     <line>
       <![CDATA[My OS version is Windows 10<br>]]>
@@ -39,15 +51,15 @@ Screenshot has been saved here :C:\Users\mdnas\eclipse-workspace\progressive.qa\
       <![CDATA[My OS version is Windows 10<br>]]>
     </line>
   </reporter-output>
-  <suite name="SmokeSuite" duration-ms="37466" started-at="2022-02-14T22:33:29 EST" finished-at="2022-02-14T22:34:06 EST">
+  <suite name="SmokeSuite" duration-ms="66541" started-at="2022-03-27T22:22:56 EDT" finished-at="2022-03-27T22:24:02 EDT">
     <groups>
       <group name="home">
-        <method signature="HomeQuoteTest.homeQuoteTesting()[pri:0, instance:progressive.qa.home.HomeQuoteTest@1445d7f]" name="homeQuoteTesting" class="progressive.qa.home.HomeQuoteTest"/>
+        <method signature="HomeQuoteTest.homeQuoteTesting()[pri:0, instance:progressive.qa.home.HomeQuoteTest@6c3f5566]" name="homeQuoteTesting" class="progressive.qa.home.HomeQuoteTest"/>
       </group> <!-- home -->
     </groups>
-    <test name="smoke" duration-ms="37466" started-at="2022-02-14T22:33:29 EST" finished-at="2022-02-14T22:34:06 EST">
+    <test name="smoke" duration-ms="66541" started-at="2022-03-27T22:22:56 EDT" finished-at="2022-03-27T22:24:02 EDT">
       <class name="progressive.qa.home.HomeQuoteTest">
-        <test-method status="PASS" signature="beforeEachTest(java.lang.reflect.Method)[pri:0, instance:progressive.qa.home.HomeQuoteTest@1445d7f]" name="beforeEachTest" is-config="true" duration-ms="1" started-at="2022-02-14T22:33:37 EST" finished-at="2022-02-14T22:33:37 EST">
+        <test-method status="PASS" signature="beforeEachTest(java.lang.reflect.Method)[pri:0, instance:progressive.qa.home.HomeQuoteTest@6c3f5566]" name="beforeEachTest" is-config="true" duration-ms="1" started-at="2022-03-27T22:23:02 EDT" finished-at="2022-03-27T22:23:02 EDT">
           <params>
             <param index="0">
               <value>
@@ -58,11 +70,16 @@ Screenshot has been saved here :C:\Users\mdnas\eclipse-workspace\progressive.qa\
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEachTest -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:progressive.qa.home.HomeQuoteTest@1445d7f]" name="setUp" is-config="true" duration-ms="3370" started-at="2022-02-14T22:33:37 EST" finished-at="2022-02-14T22:33:40 EST">
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:progressive.qa.home.HomeQuoteTest@6c3f5566]" name="setUp" is-config="true" duration-ms="4378" started-at="2022-03-27T22:23:02 EDT" finished-at="2022-03-27T22:23:06 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[mybrowser]]>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
               </value>
             </param>
           </params>
@@ -72,7 +89,7 @@ Screenshot has been saved here :C:\Users\mdnas\eclipse-workspace\progressive.qa\
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="homeQuoteTesting()[pri:0, instance:progressive.qa.home.HomeQuoteTest@1445d7f]" name="homeQuoteTesting" duration-ms="15716" started-at="2022-02-14T22:33:40 EST" finished-at="2022-02-14T22:33:56 EST">
+        <test-method status="FAIL" signature="homeQuoteTesting()[pri:0, instance:progressive.qa.home.HomeQuoteTest@6c3f5566]" name="homeQuoteTesting" duration-ms="45915" started-at="2022-03-27T22:23:06 EDT" finished-at="2022-03-27T22:23:52 EDT">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[null]]>
@@ -118,44 +135,56 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               <![CDATA[Overlay Not Found<br>]]>
             </line>
             <line>
-              <![CDATA[src,Arrtibut Present in [[ChromeDriver: chrome on WINDOWS (bd42e3cc8adaa80c9772a568389c280e)] -> xpath: (//a[contains(.,'Home')])[2]/span/img]<br>]]>
+              <![CDATA[src,Arrtibut Not Present in Proxy element for: DefaultElementLocator 'By.xpath: (//a[contains(.,'Home')])[2]/span/img'
+no such element: Unable to locate element: {"method":"xpath","selector":"(//a[contains(.,'Home')])[2]/span/img"}
+  (Session info: chrome=99.0.4844.82)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'NAS', ip: '192.168.1.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cc141270f0f0381b06c7c561e94c984c, findElement {using=xpath, value=(//a[contains(.,'Home')])[2]/span/img}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\mdnas\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50817}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50817/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cc141270f0f0381b06c7c561e94c984c<br>]]>
             </line>
             <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (bd42e3cc8adaa80c9772a568389c280e)] -> xpath: (//a[contains(.,'Home')])[2]] clicked<br>]]>
+              <![CDATA[[[ChromeDriver: chrome on WINDOWS (cc141270f0f0381b06c7c561e94c984c)] -> xpath: (//a[contains(.,'Property')])[1]] clicked<br>]]>
             </line>
             <line>
               <![CDATA[Actual value : Enter ZIP Code >>><<< Expected value : Enter ZIP Code<br>]]>
             </line>
             <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (bd42e3cc8adaa80c9772a568389c280e)] -> xpath: //input[@id='zipCode_overlay' and @name='ZipCode']] Text Value entered : 11411<br>]]>
+              <![CDATA[[[ChromeDriver: chrome on WINDOWS (cc141270f0f0381b06c7c561e94c984c)] -> xpath: (//input[@name='ZipCode'])[2]] clicked<br>]]>
             </line>
             <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (bd42e3cc8adaa80c9772a568389c280e)] -> id: qsButton_overlay] clicked<br>]]>
+              <![CDATA[[[ChromeDriver: chrome on WINDOWS (cc141270f0f0381b06c7c561e94c984c)] -> xpath: (//input[@name='ZipCode'])[2]] Text Value entered : 11411<br>]]>
+            </line>
+            <line>
+              <![CDATA[[[ChromeDriver: chrome on WINDOWS (cc141270f0f0381b06c7c561e94c984c)] -> id: qsButton_overlay_subproducts] clicked<br>]]>
             </line>
           </reporter-output>
         </test-method> <!-- homeQuoteTesting -->
-        <test-method status="PASS" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:progressive.qa.home.HomeQuoteTest@1445d7f]" name="afterEachTest" is-config="true" duration-ms="968" started-at="2022-02-14T22:33:56 EST" finished-at="2022-02-14T22:33:57 EST">
+        <test-method status="PASS" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:progressive.qa.home.HomeQuoteTest@6c3f5566]" name="afterEachTest" is-config="true" duration-ms="996" started-at="2022-03-27T22:23:52 EDT" finished-at="2022-03-27T22:23:53 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=homeQuoteTesting status=FAILURE method=HomeQuoteTest.homeQuoteTesting()[pri:0, instance:progressive.qa.home.HomeQuoteTest@1445d7f] output=Overlay Not Found<br>]]]>
+                <![CDATA[[TestResult name=homeQuoteTesting status=FAILURE method=HomeQuoteTest.homeQuoteTesting()[pri:0, instance:progressive.qa.home.HomeQuoteTest@6c3f5566] output=Overlay Not Found<br>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
               <![CDATA[Error Occured!!! 
-Screenshot has been saved here :C:\Users\mdnas\eclipse-workspace\progressive.qa\screenShots\homeQuoteTesting_02.14.2022_22.33.56_errorShot.png<br>]]>
+Screenshot has been saved here :C:\Users\mdnas\eclipse-workspace\progressive.qa\screenShots\homeQuoteTesting_03.27.2022_22.23.52_errorShot.png<br>]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterEachTest -->
       </class> <!-- progressive.qa.home.HomeQuoteTest -->
       <class name="progressive.qa.auto.AutoQuoteWithExtentReport">
-        <test-method status="PASS" signature="extentSetup()[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="extentSetup" is-config="true" duration-ms="2" started-at="2022-02-14T22:33:57 EST" finished-at="2022-02-14T22:33:57 EST">
+        <test-method status="PASS" signature="extentSetup()[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@12405818]" name="extentSetup" is-config="true" duration-ms="2" started-at="2022-03-27T22:23:53 EDT" finished-at="2022-03-27T22:23:53 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentSetup -->
-        <test-method status="PASS" signature="beforeEachTest(java.lang.reflect.Method)[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="beforeEachTest" is-config="true" duration-ms="1" started-at="2022-02-14T22:33:57 EST" finished-at="2022-02-14T22:33:57 EST">
+        <test-method status="PASS" signature="beforeEachTest(java.lang.reflect.Method)[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@12405818]" name="beforeEachTest" is-config="true" duration-ms="1" started-at="2022-03-27T22:23:53 EDT" finished-at="2022-03-27T22:23:53 EDT">
           <params>
             <param index="0">
               <value>
@@ -166,11 +195,16 @@ Screenshot has been saved here :C:\Users\mdnas\eclipse-workspace\progressive.qa\
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEachTest -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="setUp" is-config="true" duration-ms="4601" started-at="2022-02-14T22:33:57 EST" finished-at="2022-02-14T22:34:01 EST">
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@12405818]" name="setUp" is-config="true" duration-ms="3233" started-at="2022-03-27T22:23:53 EDT" finished-at="2022-03-27T22:23:56 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[mybrowser]]>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
               </value>
             </param>
           </params>
@@ -180,22 +214,22 @@ Screenshot has been saved here :C:\Users\mdnas\eclipse-workspace\progressive.qa\
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="test1" duration-ms="1" started-at="2022-02-14T22:34:01 EST" finished-at="2022-02-14T22:34:01 EST">
+        <test-method status="PASS" signature="test1()[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@12405818]" name="test1" duration-ms="1" started-at="2022-03-27T22:23:56 EDT" finished-at="2022-03-27T22:23:56 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="afterEachTest" is-config="true" duration-ms="752" started-at="2022-02-14T22:34:01 EST" finished-at="2022-02-14T22:34:02 EST">
+        <test-method status="PASS" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@12405818]" name="afterEachTest" is-config="true" duration-ms="699" started-at="2022-03-27T22:23:56 EDT" finished-at="2022-03-27T22:23:57 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test1 status=SUCCESS method=AutoQuoteWithExtentReport.test1()[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e] output={null}]]]>
+                <![CDATA[[TestResult name=test1 status=SUCCESS method=AutoQuoteWithExtentReport.test1()[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@12405818] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->
-        <test-method status="PASS" signature="beforeEachTest(java.lang.reflect.Method)[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="beforeEachTest" is-config="true" duration-ms="0" started-at="2022-02-14T22:34:02 EST" finished-at="2022-02-14T22:34:02 EST">
+        <test-method status="PASS" signature="beforeEachTest(java.lang.reflect.Method)[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@12405818]" name="beforeEachTest" is-config="true" duration-ms="2" started-at="2022-03-27T22:23:57 EDT" finished-at="2022-03-27T22:23:57 EDT">
           <params>
             <param index="0">
               <value>
@@ -206,11 +240,16 @@ Screenshot has been saved here :C:\Users\mdnas\eclipse-workspace\progressive.qa\
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEachTest -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="setUp" is-config="true" duration-ms="3255" started-at="2022-02-14T22:34:02 EST" finished-at="2022-02-14T22:34:05 EST">
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@12405818]" name="setUp" is-config="true" duration-ms="4168" started-at="2022-03-27T22:23:57 EDT" finished-at="2022-03-27T22:24:01 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[mybrowser]]>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
               </value>
             </param>
           </params>
@@ -220,32 +259,32 @@ Screenshot has been saved here :C:\Users\mdnas\eclipse-workspace\progressive.qa\
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="test2" duration-ms="1" started-at="2022-02-14T22:34:05 EST" finished-at="2022-02-14T22:34:05 EST">
+        <test-method status="PASS" signature="test2()[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@12405818]" name="test2" duration-ms="1" started-at="2022-03-27T22:24:01 EDT" finished-at="2022-03-27T22:24:01 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="afterEachTest" is-config="true" duration-ms="740" started-at="2022-02-14T22:34:05 EST" finished-at="2022-02-14T22:34:06 EST">
+        <test-method status="PASS" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@12405818]" name="afterEachTest" is-config="true" duration-ms="687" started-at="2022-03-27T22:24:01 EDT" finished-at="2022-03-27T22:24:02 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test2 status=SUCCESS method=AutoQuoteWithExtentReport.test2()[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e] output={null}]]]>
+                <![CDATA[[TestResult name=test2 status=SUCCESS method=AutoQuoteWithExtentReport.test2()[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@12405818] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->
-        <test-method status="PASS" signature="finishReport()[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@6a396c1e]" name="finishReport" is-config="true" duration-ms="325" started-at="2022-02-14T22:34:06 EST" finished-at="2022-02-14T22:34:06 EST">
+        <test-method status="PASS" signature="finishReport()[pri:0, instance:progressive.qa.auto.AutoQuoteWithExtentReport@12405818]" name="finishReport" is-config="true" duration-ms="379" started-at="2022-03-27T22:24:02 EDT" finished-at="2022-03-27T22:24:02 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finishReport -->
       </class> <!-- progressive.qa.auto.AutoQuoteWithExtentReport -->
       <class name="progressive.qa.auto.AutoQuoteTest">
-        <test-method status="PASS" signature="initiatinExtentReport()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@3444d69d]" name="initiatinExtentReport" is-config="true" duration-ms="272" started-at="2022-02-14T22:33:29 EST" finished-at="2022-02-14T22:33:29 EST">
+        <test-method status="PASS" signature="initiatinExtentReport()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@6a79c292]" name="initiatinExtentReport" is-config="true" duration-ms="298" started-at="2022-03-27T22:22:55 EDT" finished-at="2022-03-27T22:22:56 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiatinExtentReport -->
-        <test-method status="PASS" signature="beforeEachTest(java.lang.reflect.Method)[pri:0, instance:progressive.qa.auto.AutoQuoteTest@3444d69d]" name="beforeEachTest" is-config="true" duration-ms="13" started-at="2022-02-14T22:33:29 EST" finished-at="2022-02-14T22:33:29 EST">
+        <test-method status="PASS" signature="beforeEachTest(java.lang.reflect.Method)[pri:0, instance:progressive.qa.auto.AutoQuoteTest@6a79c292]" name="beforeEachTest" is-config="true" duration-ms="10" started-at="2022-03-27T22:22:56 EDT" finished-at="2022-03-27T22:22:56 EDT">
           <params>
             <param index="0">
               <value>
@@ -256,11 +295,16 @@ Screenshot has been saved here :C:\Users\mdnas\eclipse-workspace\progressive.qa\
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEachTest -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:progressive.qa.auto.AutoQuoteTest@3444d69d]" name="setUp" is-config="true" duration-ms="6871" started-at="2022-02-14T22:33:29 EST" finished-at="2022-02-14T22:33:36 EST">
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:progressive.qa.auto.AutoQuoteTest@6a79c292]" name="setUp" is-config="true" duration-ms="5323" started-at="2022-03-27T22:22:56 EDT" finished-at="2022-03-27T22:23:01 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[mybrowser]]>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[default]]>
               </value>
             </param>
           </params>
@@ -270,25 +314,25 @@ Screenshot has been saved here :C:\Users\mdnas\eclipse-workspace\progressive.qa\
             </line>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testMethodAuto()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@3444d69d]" name="testMethodAuto" duration-ms="5" started-at="2022-02-14T22:33:36 EST" depends-on-methods="progressive.qa.auto.AutoQuoteTest.autoQuoteTesting" finished-at="2022-02-14T22:33:36 EST">
+        <test-method status="PASS" signature="testMethodAuto()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@6a79c292]" name="testMethodAuto" duration-ms="6" started-at="2022-03-27T22:23:01 EDT" depends-on-methods="progressive.qa.auto.AutoQuoteTest.autoQuoteTesting" finished-at="2022-03-27T22:23:01 EDT">
           <reporter-output>
             <line>
               <![CDATA[this is an auto related test 0<br>]]>
             </line>
           </reporter-output>
         </test-method> <!-- testMethodAuto -->
-        <test-method status="PASS" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:progressive.qa.auto.AutoQuoteTest@3444d69d]" name="afterEachTest" is-config="true" duration-ms="799" started-at="2022-02-14T22:33:36 EST" finished-at="2022-02-14T22:33:37 EST">
+        <test-method status="PASS" signature="afterEachTest(org.testng.ITestResult)[pri:0, instance:progressive.qa.auto.AutoQuoteTest@6a79c292]" name="afterEachTest" is-config="true" duration-ms="692" started-at="2022-03-27T22:23:01 EDT" finished-at="2022-03-27T22:23:02 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testMethodAuto status=SUCCESS method=AutoQuoteTest.testMethodAuto()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@3444d69d] output=this is an auto related test 0<br>]]]>
+                <![CDATA[[TestResult name=testMethodAuto status=SUCCESS method=AutoQuoteTest.testMethodAuto()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@6a79c292] output=this is an auto related test 0<br>]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTest -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@3444d69d]" name="endReport" is-config="true" duration-ms="110" started-at="2022-02-14T22:34:06 EST" finished-at="2022-02-14T22:34:06 EST">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:progressive.qa.auto.AutoQuoteTest@6a79c292]" name="endReport" is-config="true" duration-ms="104" started-at="2022-03-27T22:24:02 EDT" finished-at="2022-03-27T22:24:02 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

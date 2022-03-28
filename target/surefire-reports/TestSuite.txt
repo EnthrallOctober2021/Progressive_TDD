@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 55, Failures: 2, Errors: 0, Skipped: 53, Time elapsed: 2.424 s <<< FAILURE! - in TestSuite
+progressive.qa.auto.AutoQuoteTest.setUp  Time elapsed: 1.767 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'browser' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+
+
+progressive.qa.home.HomeQuoteTest.setUp  Time elapsed: 0.002 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'browser' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+
+

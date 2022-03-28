@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="2.424" tests="55" errors="0" skipped="53" failures="2">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\mdnas\eclipse-workspace\progressive.qa\target\test-classes;C:\Users\mdnas\eclipse-workspace\progressive.qa\target\classes;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-java\4.1.1\selenium-java-4.1.1.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-api\4.1.1\selenium-api-4.1.1.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.1.1\selenium-chrome-driver-4.1.1.jar;C:\Users\mdnas\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\mdnas\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\mdnas\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.1.1\selenium-chromium-driver-4.1.1.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-json\4.1.1\selenium-json-4.1.1.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.1.1\selenium-devtools-v85-4.1.1.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v94\4.1.1\selenium-devtools-v94-4.1.1.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v95\4.1.1\selenium-devtools-v95-4.1.1.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v96\4.1.1\selenium-devtools-v96-4.1.1.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.1.1\selenium-edge-driver-4.1.1.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.1.1\selenium-firefox-driver-4.1.1.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-firefox-xpi-driver\4.1.1\selenium-firefox-xpi-driver-4.1.1.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.1.1\selenium-ie-driver-4.1.1.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.1.1\selenium-opera-driver-4.1.1.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.1.1\selenium-remote-driver-4.1.1.jar;C:\Users\mdnas\.m2\repository\io\netty\netty-buffer\4.1.70.Final\netty-buffer-4.1.70.Final.jar;C:\Users\mdnas\.m2\repository\io\netty\netty-codec-http\4.1.70.Final\netty-codec-http-4.1.70.Final.jar;C:\Users\mdnas\.m2\repository\io\netty\netty-codec\4.1.70.Final\netty-codec-4.1.70.Final.jar;C:\Users\mdnas\.m2\repository\io\netty\netty-handler\4.1.70.Final\netty-handler-4.1.70.Final.jar;C:\Users\mdnas\.m2\repository\io\netty\netty-common\4.1.70.Final\netty-common-4.1.70.Final.jar;C:\Users\mdnas\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.70.Final\netty-transport-classes-epoll-4.1.70.Final.jar;C:\Users\mdnas\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.70.Final\netty-transport-classes-kqueue-4.1.70.Final.jar;C:\Users\mdnas\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.70.Final\netty-transport-native-unix-common-4.1.70.Final.jar;C:\Users\mdnas\.m2\repository\io\netty\netty-transport\4.1.70.Final\netty-transport-4.1.70.Final.jar;C:\Users\mdnas\.m2\repository\io\netty\netty-resolver\4.1.70.Final\netty-resolver-4.1.70.Final.jar;C:\Users\mdnas\.m2\repository\io\opentelemetry\opentelemetry-api\1.9.1\opentelemetry-api-1.9.1.jar;C:\Users\mdnas\.m2\repository\io\opentelemetry\opentelemetry-context\1.9.1\opentelemetry-context-1.9.1.jar;C:\Users\mdnas\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.9.1\opentelemetry-exporter-logging-1.9.1.jar;C:\Users\mdnas\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.9.1-alpha\opentelemetry-sdk-metrics-1.9.1-alpha.jar;C:\Users\mdnas\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.9.1-alpha\opentelemetry-sdk-logs-1.9.1-alpha.jar;C:\Users\mdnas\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.9.1\opentelemetry-sdk-common-1.9.1.jar;C:\Users\mdnas\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.9.1\opentelemetry-sdk-extension-autoconfigure-spi-1.9.1.jar;C:\Users\mdnas\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.9.1-alpha\opentelemetry-sdk-extension-autoconfigure-1.9.1-alpha.jar;C:\Users\mdnas\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.9.1\opentelemetry-sdk-trace-1.9.1.jar;C:\Users\mdnas\.m2\repository\io\opentelemetry\opentelemetry-api-metrics\1.9.1-alpha\opentelemetry-api-metrics-1.9.1-alpha.jar;C:\Users\mdnas\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.9.1\opentelemetry-sdk-1.9.1.jar;C:\Users\mdnas\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.9.1-alpha\opentelemetry-semconv-1.9.1-alpha.jar;C:\Users\mdnas\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\mdnas\.m2\repository\net\bytebuddy\byte-buddy\1.12.2\byte-buddy-1.12.2.jar;C:\Users\mdnas\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\mdnas\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\mdnas\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\mdnas\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\mdnas\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\mdnas\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\mdnas\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\mdnas\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\mdnas\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-http\4.1.1\selenium-http-4.1.1.jar;C:\Users\mdnas\.m2\repository\net\jodah\failsafe\2.4.4\failsafe-2.4.4.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.1.1\selenium-safari-driver-4.1.1.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-support\4.1.1\selenium-support-4.1.1.jar;C:\Users\mdnas\.m2\repository\org\testng\testng\7.5\testng-7.5.jar;C:\Users\mdnas\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar;C:\Users\mdnas\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\mdnas\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\mdnas\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\mdnas\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\mdnas\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\mdnas\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\mdnas\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\mdnas\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;C:\Users\mdnas\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\mdnas\.m2\repository\io\github\bonigarcia\webdrivermanager\5.0.3\webdrivermanager-5.0.3.jar;C:\Users\mdnas\.m2\repository\org\jsoup\jsoup\1.14.2\jsoup-1.14.2.jar;C:\Users\mdnas\.m2\repository\com\github\docker-java\docker-java\3.2.12\docker-java-3.2.12.jar;C:\Users\mdnas\.m2\repository\com\github\docker-java\docker-java-core\3.2.12\docker-java-core-3.2.12.jar;C:\Users\mdnas\.m2\repository\com\github\docker-java\docker-java-api\3.2.12\docker-java-api-3.2.12.jar;C:\Users\mdnas\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\mdnas\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\mdnas\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\mdnas\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\mdnas\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\mdnas\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.12\docker-java-transport-httpclient5-3.2.12.jar;C:\Users\mdnas\.m2\repository\com\github\docker-java\docker-java-transport\3.2.12\docker-java-transport-3.2.12.jar;C:\Users\mdnas\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\mdnas\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\mdnas\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\mdnas\.m2\repository\com\google\guava\guava\30.1.1-jre\guava-30.1.1-jre.jar;C:\Users\mdnas\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\mdnas\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\mdnas\.m2\repository\org\checkerframework\checker-qual\3.8.0\checker-qual-3.8.0.jar;C:\Users\mdnas\.m2\repository\com\google\errorprone\error_prone_annotations\2.5.1\error_prone_annotations-2.5.1.jar;C:\Users\mdnas\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\mdnas\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\mdnas\.m2\repository\org\apache\poi\poi\5.0.0\poi-5.0.0.jar;C:\Users\mdnas\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\mdnas\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\mdnas\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\mdnas\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\mdnas\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\mdnas\.m2\repository\org\apache\poi\poi-ooxml\5.0.0\poi-ooxml-5.0.0.jar;C:\Users\mdnas\.m2\repository\org\apache\poi\poi-ooxml-lite\5.0.0\poi-ooxml-lite-5.0.0.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlbeans\xmlbeans\4.0.0\xmlbeans-4.0.0.jar;C:\Users\mdnas\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\mdnas\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\mdnas\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\mdnas\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.68\bcpkix-jdk15on-1.68.jar;C:\Users\mdnas\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.68\bcprov-jdk15on-1.68.jar;C:\Users\mdnas\.m2\repository\org\apache\santuario\xmlsec\2.2.1\xmlsec-2.2.1.jar;C:\Users\mdnas\.m2\repository\com\fasterxml\woodstox\woodstox-core\5.2.1\woodstox-core-5.2.1.jar;C:\Users\mdnas\.m2\repository\org\codehaus\woodstox\stax2-api\4.2\stax2-api-4.2.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-all\1.13\batik-all-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-anim\1.13\batik-anim-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-shared-resources\1.13\batik-shared-resources-1.13.jar;C:\Users\mdnas\.m2\repository\xml-apis\xml-apis-ext\1.3.04\xml-apis-ext-1.3.04.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-awt-util\1.13\batik-awt-util-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\xmlgraphics-commons\2.4\xmlgraphics-commons-2.4.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-bridge\1.13\batik-bridge-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-codec\1.13\batik-codec-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-constants\1.13\batik-constants-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-css\1.13\batik-css-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-dom\1.13\batik-dom-1.13.jar;C:\Users\mdnas\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\mdnas\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-ext\1.13\batik-ext-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-extension\1.13\batik-extension-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-gui-util\1.13\batik-gui-util-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-gvt\1.13\batik-gvt-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-i18n\1.13\batik-i18n-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-parser\1.13\batik-parser-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-rasterizer-ext\1.13\batik-rasterizer-ext-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-rasterizer\1.13\batik-rasterizer-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-script\1.13\batik-script-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-slideshow\1.13\batik-slideshow-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-squiggle-ext\1.13\batik-squiggle-ext-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-squiggle\1.13\batik-squiggle-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-svg-dom\1.13\batik-svg-dom-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-svgbrowser\1.13\batik-svgbrowser-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-svggen\1.13\batik-svggen-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-svgpp\1.13\batik-svgpp-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-svgrasterizer\1.13\batik-svgrasterizer-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-swing\1.13\batik-swing-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-transcoder\1.13\batik-transcoder-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-util\1.13\batik-util-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-ttf2svg\1.13\batik-ttf2svg-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-xml\1.13\batik-xml-1.13.jar;C:\Users\mdnas\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\mdnas\.m2\repository\org\apache\pdfbox\pdfbox\2.0.22\pdfbox-2.0.22.jar;C:\Users\mdnas\.m2\repository\org\apache\pdfbox\fontbox\2.0.22\fontbox-2.0.22.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_301\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\mdnas\AppData\Local\Temp\surefire500512231887130760\surefirebooter3886221770865412858.jar C:\Users\mdnas\AppData\Local\Temp\surefire500512231887130760 2022-03-04T22-50-50_670-jvmRun1 surefire710169217177740360tmp surefire_02743549902091125381tmp"/>
+    <property name="surefire.test.class.path" value="C:\Users\mdnas\eclipse-workspace\progressive.qa\target\test-classes;C:\Users\mdnas\eclipse-workspace\progressive.qa\target\classes;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-java\4.1.1\selenium-java-4.1.1.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-api\4.1.1\selenium-api-4.1.1.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.1.1\selenium-chrome-driver-4.1.1.jar;C:\Users\mdnas\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\mdnas\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\mdnas\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.1.1\selenium-chromium-driver-4.1.1.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-json\4.1.1\selenium-json-4.1.1.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.1.1\selenium-devtools-v85-4.1.1.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v94\4.1.1\selenium-devtools-v94-4.1.1.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v95\4.1.1\selenium-devtools-v95-4.1.1.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v96\4.1.1\selenium-devtools-v96-4.1.1.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.1.1\selenium-edge-driver-4.1.1.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.1.1\selenium-firefox-driver-4.1.1.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-firefox-xpi-driver\4.1.1\selenium-firefox-xpi-driver-4.1.1.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.1.1\selenium-ie-driver-4.1.1.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.1.1\selenium-opera-driver-4.1.1.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.1.1\selenium-remote-driver-4.1.1.jar;C:\Users\mdnas\.m2\repository\io\netty\netty-buffer\4.1.70.Final\netty-buffer-4.1.70.Final.jar;C:\Users\mdnas\.m2\repository\io\netty\netty-codec-http\4.1.70.Final\netty-codec-http-4.1.70.Final.jar;C:\Users\mdnas\.m2\repository\io\netty\netty-codec\4.1.70.Final\netty-codec-4.1.70.Final.jar;C:\Users\mdnas\.m2\repository\io\netty\netty-handler\4.1.70.Final\netty-handler-4.1.70.Final.jar;C:\Users\mdnas\.m2\repository\io\netty\netty-common\4.1.70.Final\netty-common-4.1.70.Final.jar;C:\Users\mdnas\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.70.Final\netty-transport-classes-epoll-4.1.70.Final.jar;C:\Users\mdnas\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.70.Final\netty-transport-classes-kqueue-4.1.70.Final.jar;C:\Users\mdnas\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.70.Final\netty-transport-native-unix-common-4.1.70.Final.jar;C:\Users\mdnas\.m2\repository\io\netty\netty-transport\4.1.70.Final\netty-transport-4.1.70.Final.jar;C:\Users\mdnas\.m2\repository\io\netty\netty-resolver\4.1.70.Final\netty-resolver-4.1.70.Final.jar;C:\Users\mdnas\.m2\repository\io\opentelemetry\opentelemetry-api\1.9.1\opentelemetry-api-1.9.1.jar;C:\Users\mdnas\.m2\repository\io\opentelemetry\opentelemetry-context\1.9.1\opentelemetry-context-1.9.1.jar;C:\Users\mdnas\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.9.1\opentelemetry-exporter-logging-1.9.1.jar;C:\Users\mdnas\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.9.1-alpha\opentelemetry-sdk-metrics-1.9.1-alpha.jar;C:\Users\mdnas\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.9.1-alpha\opentelemetry-sdk-logs-1.9.1-alpha.jar;C:\Users\mdnas\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.9.1\opentelemetry-sdk-common-1.9.1.jar;C:\Users\mdnas\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.9.1\opentelemetry-sdk-extension-autoconfigure-spi-1.9.1.jar;C:\Users\mdnas\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.9.1-alpha\opentelemetry-sdk-extension-autoconfigure-1.9.1-alpha.jar;C:\Users\mdnas\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.9.1\opentelemetry-sdk-trace-1.9.1.jar;C:\Users\mdnas\.m2\repository\io\opentelemetry\opentelemetry-api-metrics\1.9.1-alpha\opentelemetry-api-metrics-1.9.1-alpha.jar;C:\Users\mdnas\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.9.1\opentelemetry-sdk-1.9.1.jar;C:\Users\mdnas\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.9.1-alpha\opentelemetry-semconv-1.9.1-alpha.jar;C:\Users\mdnas\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\mdnas\.m2\repository\net\bytebuddy\byte-buddy\1.12.2\byte-buddy-1.12.2.jar;C:\Users\mdnas\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\mdnas\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\mdnas\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\mdnas\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\mdnas\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\mdnas\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\mdnas\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\mdnas\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\mdnas\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-http\4.1.1\selenium-http-4.1.1.jar;C:\Users\mdnas\.m2\repository\net\jodah\failsafe\2.4.4\failsafe-2.4.4.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.1.1\selenium-safari-driver-4.1.1.jar;C:\Users\mdnas\.m2\repository\org\seleniumhq\selenium\selenium-support\4.1.1\selenium-support-4.1.1.jar;C:\Users\mdnas\.m2\repository\org\testng\testng\7.5\testng-7.5.jar;C:\Users\mdnas\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar;C:\Users\mdnas\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\mdnas\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\mdnas\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\mdnas\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\mdnas\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\mdnas\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\mdnas\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\mdnas\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;C:\Users\mdnas\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\mdnas\.m2\repository\io\github\bonigarcia\webdrivermanager\5.0.3\webdrivermanager-5.0.3.jar;C:\Users\mdnas\.m2\repository\org\jsoup\jsoup\1.14.2\jsoup-1.14.2.jar;C:\Users\mdnas\.m2\repository\com\github\docker-java\docker-java\3.2.12\docker-java-3.2.12.jar;C:\Users\mdnas\.m2\repository\com\github\docker-java\docker-java-core\3.2.12\docker-java-core-3.2.12.jar;C:\Users\mdnas\.m2\repository\com\github\docker-java\docker-java-api\3.2.12\docker-java-api-3.2.12.jar;C:\Users\mdnas\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\mdnas\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\mdnas\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\mdnas\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\mdnas\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\mdnas\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.12\docker-java-transport-httpclient5-3.2.12.jar;C:\Users\mdnas\.m2\repository\com\github\docker-java\docker-java-transport\3.2.12\docker-java-transport-3.2.12.jar;C:\Users\mdnas\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\mdnas\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\mdnas\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\mdnas\.m2\repository\com\google\guava\guava\30.1.1-jre\guava-30.1.1-jre.jar;C:\Users\mdnas\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\mdnas\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\mdnas\.m2\repository\org\checkerframework\checker-qual\3.8.0\checker-qual-3.8.0.jar;C:\Users\mdnas\.m2\repository\com\google\errorprone\error_prone_annotations\2.5.1\error_prone_annotations-2.5.1.jar;C:\Users\mdnas\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\mdnas\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\mdnas\.m2\repository\org\apache\poi\poi\5.0.0\poi-5.0.0.jar;C:\Users\mdnas\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\mdnas\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\mdnas\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\mdnas\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\mdnas\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\mdnas\.m2\repository\org\apache\poi\poi-ooxml\5.0.0\poi-ooxml-5.0.0.jar;C:\Users\mdnas\.m2\repository\org\apache\poi\poi-ooxml-lite\5.0.0\poi-ooxml-lite-5.0.0.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlbeans\xmlbeans\4.0.0\xmlbeans-4.0.0.jar;C:\Users\mdnas\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\mdnas\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;C:\Users\mdnas\.m2\repository\com\github\virtuald\curvesapi\1.06\curvesapi-1.06.jar;C:\Users\mdnas\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.68\bcpkix-jdk15on-1.68.jar;C:\Users\mdnas\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.68\bcprov-jdk15on-1.68.jar;C:\Users\mdnas\.m2\repository\org\apache\santuario\xmlsec\2.2.1\xmlsec-2.2.1.jar;C:\Users\mdnas\.m2\repository\com\fasterxml\woodstox\woodstox-core\5.2.1\woodstox-core-5.2.1.jar;C:\Users\mdnas\.m2\repository\org\codehaus\woodstox\stax2-api\4.2\stax2-api-4.2.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-all\1.13\batik-all-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-anim\1.13\batik-anim-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-shared-resources\1.13\batik-shared-resources-1.13.jar;C:\Users\mdnas\.m2\repository\xml-apis\xml-apis-ext\1.3.04\xml-apis-ext-1.3.04.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-awt-util\1.13\batik-awt-util-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\xmlgraphics-commons\2.4\xmlgraphics-commons-2.4.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-bridge\1.13\batik-bridge-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-codec\1.13\batik-codec-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-constants\1.13\batik-constants-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-css\1.13\batik-css-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-dom\1.13\batik-dom-1.13.jar;C:\Users\mdnas\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\mdnas\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-ext\1.13\batik-ext-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-extension\1.13\batik-extension-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-gui-util\1.13\batik-gui-util-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-gvt\1.13\batik-gvt-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-i18n\1.13\batik-i18n-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-parser\1.13\batik-parser-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-rasterizer-ext\1.13\batik-rasterizer-ext-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-rasterizer\1.13\batik-rasterizer-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-script\1.13\batik-script-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-slideshow\1.13\batik-slideshow-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-squiggle-ext\1.13\batik-squiggle-ext-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-squiggle\1.13\batik-squiggle-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-svg-dom\1.13\batik-svg-dom-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-svgbrowser\1.13\batik-svgbrowser-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-svggen\1.13\batik-svggen-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-svgpp\1.13\batik-svgpp-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-svgrasterizer\1.13\batik-svgrasterizer-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-swing\1.13\batik-swing-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-transcoder\1.13\batik-transcoder-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-util\1.13\batik-util-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-ttf2svg\1.13\batik-ttf2svg-1.13.jar;C:\Users\mdnas\.m2\repository\org\apache\xmlgraphics\batik-xml\1.13\batik-xml-1.13.jar;C:\Users\mdnas\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\mdnas\.m2\repository\org\apache\pdfbox\pdfbox\2.0.22\pdfbox-2.0.22.jar;C:\Users\mdnas\.m2\repository\org\apache\pdfbox\fontbox\2.0.22\fontbox-2.0.22.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\mdnas"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_301\jre"/>
+    <property name="basedir" value="C:\Users\mdnas\eclipse-workspace\progressive.qa"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\mdnas\AppData\Local\Temp\surefire500512231887130760\surefirebooter3886221770865412858.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_301\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_301\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_301-b09"/>
+    <property name="user.name" value="mdnas"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_301\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\mdnas\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\mdnas\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_301"/>
+    <property name="user.dir" value="C:\Users\mdnas\eclipse-workspace\progressive.qa"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_301\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/mdnas/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208/jre/bin/server;C:/Users/mdnas/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208/jre/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python310\Scripts\;C:\Python310\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\apache-maven-3.5.4\bin;C:\Program Files\Git\cmd;C:\Users\mdnas\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\mdnas\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\bin;;C:\Users\mdnas\Desktop;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.301-b09"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_301\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="setUp" classname="progressive.qa.auto.AutoQuoteTest" time="1.767">
+    <failure message="&#10;Parameter &apos;browser&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined&#10;" type="org.testng.TestNGException"><![CDATA[org.testng.TestNGException: 
+
+Parameter 'browser' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+
+]]></failure>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Mar 04, 2022 10:50:54 PM progressive.qa.reporting.Java_Logger getLog
+INFO: Reporting is starting ...
+]]></system-err>
+  </testcase>
+  <testcase name="setUp" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="autoQuoteTestingWithExcelDataProbider[null, null, null, null, null, null, null, null, null, null, null](1)" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined&#10;"/>
+  </testcase>
+  <testcase name="afterEachTest" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterEachTest" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterEachTest" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterEachTest" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterEachTest" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterEachTest" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterEachTest" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterEachTest" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterEachTest" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterEachTest" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterEachTest" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterEachTest" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeEachTest" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeEachTest" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeEachTest" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeEachTest" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeEachTest" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeEachTest" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeEachTest" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+    <system-err><![CDATA[Mar 04, 2022 10:50:55 PM progressive.qa.reporting.Java_Logger getLog
+INFO: Name & Birthdate
+Mar 04, 2022 10:50:55 PM progressive.qa.reporting.Java_Logger getLog
+INFO: Name & Birthdate
+Mar 04, 2022 10:50:55 PM progressive.qa.reporting.Java_Logger getLog
+INFO: Name & Birthdate
+]]></system-err>
+  </testcase>
+  <testcase name="beforeEachTest" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeEachTest" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeEachTest" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeEachTest" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="autoQuoteTestingWithExcelDataProbider[10472, Enter ZIP Code, Name &amp; Birthdate, Bright, Boy, JR, 02/05/1999, 1943 Paul Ave, 5b, Bronx, Tell us about your vehicle(s)…](2)" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined&#10;"/>
+  </testcase>
+  <testcase name="autoQuoteTestingWithExcelDataProbider[10473, Enter ZIP Code, Name &amp; Birthdate, Talent, Boy, SR, 11/11/1988, 1020 Paul Ave, 4b, Bronx, Tell us about your vehicle(s)…](3)" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined&#10;"/>
+  </testcase>
+  <testcase name="autoQuoteTestingWithExcelDataProbider[10472, Enter ZIP Code, Name &amp; Birthdate, Bright, Girl, JR, 03/05/1999, 1945 Paul Ave, 1c, Bronx, Tell us about your vehicle(s)…](4)" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined&#10;"/>
+  </testcase>
+  <testcase name="autoQuoteTestingWithIterator2DataProbider[progressive.qa.data.ZipCodeData@764faa6](1)" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined&#10;"/>
+  </testcase>
+  <testcase name="autoQuoteTestingWithIterator2DataProbider[progressive.qa.data.ZipCodeData@4f5991f6](2)" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined&#10;"/>
+  </testcase>
+  <testcase name="autoQuoteTestingWithIterator2DataProbider[progressive.qa.data.ZipCodeData@2c07545f](3)" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined&#10;"/>
+  </testcase>
+  <testcase name="autoQuoteTestingWithIteratorDataProbider[progressive.qa.data.AutoDataClass@e70f13a](1)" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined&#10;"/>
+  </testcase>
+  <testcase name="autoQuoteTestingWithIteratorDataProbider[progressive.qa.data.AutoDataClass@d62fe5b](2)" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined&#10;"/>
+  </testcase>
+  <testcase name="autoQuoteTestingWithIteratorDataProbider[progressive.qa.data.AutoDataClass@27eedb64](3)" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined&#10;"/>
+  </testcase>
+  <testcase name="testMethodAuto1" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined&#10;"/>
+  </testcase>
+  <testcase name="autoQuoteTesting" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined&#10;"/>
+  </testcase>
+  <testcase name="testMethodAuto" classname="progressive.qa.auto.AutoQuoteTest" time="0">
+    <skipped message="Method progressive.qa.auto.AutoQuoteTest.testMethodAuto() on instance progressive.qa.auto.AutoQuoteTest@2641e737 depends on not successfully finished methods &#10;[progressive.qa.auto.AutoQuoteTest.autoQuoteTesting() on instance progressive.qa.auto.AutoQuoteTest@2641e737]"/>
+  </testcase>
+  <testcase name="setUp" classname="progressive.qa.home.HomeQuoteTest" time="0.002">
+    <failure message="&#10;Parameter &apos;browser&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined&#10;" type="org.testng.TestNGException"><![CDATA[org.testng.TestNGException: 
+
+Parameter 'browser' is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+
+]]></failure>
+  </testcase>
+  <testcase name="setUp" classname="progressive.qa.home.HomeQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="homeQuoteTesting" classname="progressive.qa.home.HomeQuoteTest" time="0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined&#10;"/>
+  </testcase>
+  <testcase name="afterEachTest" classname="progressive.qa.home.HomeQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="afterEachTest" classname="progressive.qa.home.HomeQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="beforeEachTest" classname="progressive.qa.home.HomeQuoteTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="homeTest" classname="progressive.qa.home.HomeQuoteTest" time="0">
+    <skipped message="&#10;Parameter &apos;browser&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined&#10;"/>
+  </testcase>
+</testsuite>

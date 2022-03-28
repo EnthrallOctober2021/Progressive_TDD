@@ -1,15 +1,24 @@
 package progressive.qa.base;
 
+import java.io.FileReader;
 import java.lang.reflect.Method;
+import java.net.URL;
 import java.time.Duration;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Properties;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.safari.SafariOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -54,9 +63,9 @@ public class BaseClass {
 		extent = ExtentManager.getInstance();
 	}
 	
-	@Parameters("browser")
+	@Parameters({"browser", "platform"})
 	@BeforeMethod
-	public void setUp(String browser) {
+	public void setUp(String browser, String platform) {
 		String os = System.getProperty("os.name");
 		Logger.log("My OS version is " + os); 
 		if(browser.equalsIgnoreCase("chrome")) {
@@ -77,6 +86,8 @@ public class BaseClass {
 		}else if(browser.equalsIgnoreCase("safari") && os.contains("Mac")) {
 			WebDriverManager.safaridriver().setup();
 			driver = new SafariDriver();
+		}else if(browser.equalsIgnoreCase("cloud")) {
+			driver = new BaseClass().remoteDriver(platform);
 		}else {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
@@ -132,5 +143,77 @@ public class BaseClass {
 		commonActions = new CommonActions();
 		configurable = Configurable.getInstance();
 		jsExecutor = (JavascriptExecutor)driver;
+	}
+	
+	public WebDriver remoteDriver(String browser) {
+		if (browser.equals("safari")) {
+			SafariOptions browserOptions = new SafariOptions();
+			browserOptions.setPlatformName("macOS 10.15");
+			browserOptions.setBrowserVersion("13");
+			Map<String, Object> sauceOptions = new HashMap<>();
+			browserOptions.setCapability("sauce:options", sauceOptions);
+			Properties properties = new Properties();
+			try {
+				properties.load(new FileReader("./configuration/secrets.properties"));
+				URL url = new URL("https://"+properties.getProperty("sauceLabUser")+":"
+						+properties.getProperty("sauceLabKey")+"@"+properties.getProperty("sauceLabUrl"));
+				driver = new RemoteWebDriver(url, browserOptions);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}else if(browser.equalsIgnoreCase("chrome")) {
+			ChromeOptions browserOptions = new ChromeOptions();
+			browserOptions.setPlatformName("Windows 10");
+			browserOptions.setBrowserVersion("99");
+			Map<String, Object> sauceOptions = new HashMap<>();
+			browserOptions.setCapability("sauce:options", sauceOptions);
+			Properties properties = new Properties();
+			try {
+				properties.load(new FileReader("./configuration/secrets.properties"));
+				URL url = new URL("https://"+properties.getProperty("sauceLabUser")+":"
+						+properties.getProperty("sauceLabKey")+"@"+properties.getProperty("sauceLabUrl"));
+				driver = new RemoteWebDriver(url, browserOptions);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}else if(browser.equalsIgnoreCase("ios")) {
+			MutableCapabilities caps = new MutableCapabilities();
+			caps.setCapability("platformName", "iOS");
+			caps.setCapability("browserName", "Safari");
+			caps.setCapability("appium:deviceName", "iPad Simulator");
+			caps.setCapability("appium:platformVersion", "14.4");
+			MutableCapabilities sauceOptions = new MutableCapabilities();
+			sauceOptions.setCapability("appiumVersion", "1.22.2");
+			caps.setCapability("sauce:options", sauceOptions);
+			Properties properties = new Properties();
+			try {
+				properties.load(new FileReader("./configuration/secrets.properties"));
+				URL url = new URL("https://"+properties.getProperty("sauceLabUser")+":"
+						+properties.getProperty("sauceLabKey")+"@"+properties.getProperty("sauceLabUrl"));
+				driver = new RemoteWebDriver(url, caps);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}else if(browser.equalsIgnoreCase("android")) {
+			MutableCapabilities caps = new MutableCapabilities();
+			caps.setCapability("platformName", "Android");
+			caps.setCapability("browserName", "Chrome");
+			caps.setCapability("appium:deviceName", "Google Pixel 3a GoogleAPI Emulator");
+			caps.setCapability("appium:platformVersion", "10.0");
+			MutableCapabilities sauceOptions = new MutableCapabilities();
+			sauceOptions.setCapability("appiumVersion", "1.20.2");
+			caps.setCapability("sauce:options", sauceOptions);
+			Properties properties = new Properties();
+			try {
+				properties.load(new FileReader("./configuration/secrets.properties"));
+				URL url = new URL("https://"+properties.getProperty("sauceLabUser")+":"
+						+properties.getProperty("sauceLabKey")+"@"+properties.getProperty("sauceLabUrl"));
+				driver = new RemoteWebDriver(url, caps);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+
+		return driver;
 	}
 }

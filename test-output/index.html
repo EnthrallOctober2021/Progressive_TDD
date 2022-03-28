@@ -211,7 +211,8 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;SmokeSuite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;smoke&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;mybrowser&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;platform&quot; value=&quot;default&quot;/&gt;
     &lt;groups&gt;
       &lt;run&gt;
         &lt;exclude name=&quot;auto&quot;/&gt;
@@ -285,24 +286,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'homeQuoteTesting')
 data.setCell(0, 2, 'progressive.qa.home.HomeQuoteTest')
-data.setCell(0, 3, 15716);
+data.setCell(0, 3, 45915);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testMethodAuto')
 data.setCell(1, 2, 'progressive.qa.auto.AutoQuoteTest')
-data.setCell(1, 3, 5);
+data.setCell(1, 3, 6);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'test2')
+data.setCell(2, 1, 'test1')
 data.setCell(2, 2, 'progressive.qa.auto.AutoQuoteWithExtentReport')
 data.setCell(2, 3, 1);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'test1')
+data.setCell(3, 1, 'test2')
 data.setCell(3, 2, 'progressive.qa.auto.AutoQuoteWithExtentReport')
 data.setCell(3, 3, 1);
 window.suiteTableData['SmokeSuite']= { tableData: data, tableDiv: 'times-div-SmokeSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 45 seconds</span>
               <div id="times-div-SmokeSuite">
               </div> <!-- times-div-SmokeSuite -->
             </div> <!-- times-div -->
@@ -323,11 +324,21 @@ return data;
               <span class="reporter-method-name">homeQuoteTesting</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Overlay Not Found<br></span>
-                <span class="reporter-method-output">src,Arrtibut Present in [[ChromeDriver: chrome on WINDOWS (bd42e3cc8adaa80c9772a568389c280e)] -> xpath: (//a[contains(.,'Home')])[2]/span/img]<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on WINDOWS (bd42e3cc8adaa80c9772a568389c280e)] -> xpath: (//a[contains(.,'Home')])[2]] clicked<br></span>
+                <span class="reporter-method-output">src,Arrtibut Not Present in Proxy element for: DefaultElementLocator 'By.xpath: (//a[contains(.,'Home')])[2]/span/img'
+no such element: Unable to locate element: {"method":"xpath","selector":"(//a[contains(.,'Home')])[2]/span/img"}
+  (Session info: chrome=99.0.4844.82)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'NAS', ip: '192.168.1.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cc141270f0f0381b06c7c561e94c984c, findElement {using=xpath, value=(//a[contains(.,'Home')])[2]/span/img}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\mdnas\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50817}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50817/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cc141270f0f0381b06c7c561e94c984c<br></span>
+                <span class="reporter-method-output">[[ChromeDriver: chrome on WINDOWS (cc141270f0f0381b06c7c561e94c984c)] -> xpath: (//a[contains(.,'Property')])[1]] clicked<br></span>
                 <span class="reporter-method-output">Actual value : Enter ZIP Code >>><<< Expected value : Enter ZIP Code<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on WINDOWS (bd42e3cc8adaa80c9772a568389c280e)] -> xpath: //input[@id='zipCode_overlay' and @name='ZipCode']] Text Value entered : 11411<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on WINDOWS (bd42e3cc8adaa80c9772a568389c280e)] -> id: qsButton_overlay] clicked<br></span>
+                <span class="reporter-method-output">[[ChromeDriver: chrome on WINDOWS (cc141270f0f0381b06c7c561e94c984c)] -> xpath: (//input[@name='ZipCode'])[2]] clicked<br></span>
+                <span class="reporter-method-output">[[ChromeDriver: chrome on WINDOWS (cc141270f0f0381b06c7c561e94c984c)] -> xpath: (//input[@name='ZipCode'])[2]] Text Value entered : 11411<br></span>
+                <span class="reporter-method-output">[[ChromeDriver: chrome on WINDOWS (cc141270f0f0381b06c7c561e94c984c)] -> id: qsButton_overlay_subproducts] clicked<br></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -338,6 +349,21 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
+              <span class="ignored-class-name">progressive.qa.auto.AutoQuoteTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testMethodAuto1</span>
+                <br/>
+                <span class="ignored-method-name">autoQuoteTestingWithExcelDataProbider</span>
+                <br/>
+                <span class="ignored-method-name">autoQuoteTestingWithIterator2DataProbider</span>
+                <br/>
+                <span class="ignored-method-name">autoQuoteTesting</span>
+                <br/>
+                <span class="ignored-method-name">autoQuoteTestingWithIteratorDataProbider</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
               <span class="ignored-class-name">progressive.qa.home.HomeQuoteTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">initiatinExtentReport</span>
@@ -345,21 +371,6 @@ return data;
                 <span class="ignored-method-name">endReport</span>
                 <br/>
                 <span class="ignored-method-name">homeTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">progressive.qa.auto.AutoQuoteTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">testMethodAuto1</span>
-                <br/>
-                <span class="ignored-method-name">autoQuoteTesting</span>
-                <br/>
-                <span class="ignored-method-name">autoQuoteTestingWithIterator2DataProbider</span>
-                <br/>
-                <span class="ignored-method-name">autoQuoteTestingWithIteratorDataProbider</span>
-                <br/>
-                <span class="ignored-method-name">autoQuoteTestingWithExcelDataProbider</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -389,90 +400,90 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeEachTest(public void progressive.qa.auto.AutoQuoteTest.testMethodAuto())</span>
-                <span class="method-start">300 ms</span>
+                <span class="method-start">327 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(mybrowser)</span>
-                <span class="method-start">313 ms</span>
+                <span class="method-name">setUp(chrome, default)</span>
+                <span class="method-start">338 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testMethodAuto</span>
-                <span class="method-start">7184 ms</span>
+                <span class="method-start">5661 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachTest([TestResult name=testMethodAuto status=SUCCESS method=AutoQuoteTest.testMethodAuto()[pri:0, instance...)</span>
-                <span class="method-start">7191 ms</span>
+                <span class="method-start">5669 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">progressive.qa.home.HomeQuoteTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeEachTest(public void progressive.qa.home.HomeQuoteTest.homeQuoteTesting())</span>
-                <span class="method-start">7996 ms</span>
+                <span class="method-start">6366 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(mybrowser)</span>
-                <span class="method-start">7997 ms</span>
+                <span class="method-name">setUp(chrome, default)</span>
+                <span class="method-start">6368 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">homeQuoteTesting</span>
-                <span class="method-start">11367 ms</span>
+                <span class="method-start">10746 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachTest([TestResult name=homeQuoteTesting status=FAILURE method=HomeQuoteTest.homeQuoteTesting()[pri:0, inst...)</span>
-                <span class="method-start">27086 ms</span>
+                <span class="method-start">56662 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">progressive.qa.auto.AutoQuoteWithExtentReport</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">extentSetup</span>
-                <span class="method-start">28057 ms</span>
+                <span class="method-start">57661 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeEachTest(public void progressive.qa.auto.AutoQuoteWithExtentReport.test1())</span>
-                <span class="method-start">28059 ms</span>
+                <span class="method-start">57663 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(mybrowser)</span>
-                <span class="method-start">28061 ms</span>
+                <span class="method-name">setUp(chrome, default)</span>
+                <span class="method-start">57664 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test1</span>
-                <span class="method-start">32662 ms</span>
+                <span class="method-start">60898 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachTest([TestResult name=test1 status=SUCCESS method=AutoQuoteWithExtentReport.test1()[pri:0, instance:progr...)</span>
-                <span class="method-start">32663 ms</span>
+                <span class="method-start">60901 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeEachTest(public void progressive.qa.auto.AutoQuoteWithExtentReport.test2())</span>
-                <span class="method-start">33416 ms</span>
+                <span class="method-start">61602 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(mybrowser)</span>
-                <span class="method-start">33417 ms</span>
+                <span class="method-name">setUp(chrome, default)</span>
+                <span class="method-start">61604 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test2</span>
-                <span class="method-start">36672 ms</span>
+                <span class="method-start">65772 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEachTest([TestResult name=test2 status=SUCCESS method=AutoQuoteWithExtentReport.test2()[pri:0, instance:progr...)</span>
-                <span class="method-start">36674 ms</span>
+                <span class="method-start">65774 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">finishReport</span>
-                <span class="method-start">37414 ms</span>
+                <span class="method-start">66461 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">progressive.qa.auto.AutoQuoteTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">37767 ms</span>
+                <span class="method-start">66873 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

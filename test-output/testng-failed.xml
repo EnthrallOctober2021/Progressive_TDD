@@ -2,7 +2,8 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [SmokeSuite]">
   <test thread-count="5" name="smoke(failed)">
-    <parameter name="browser" value="mybrowser"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="platform" value="default"/>
     <groups>
       <run>
         <exclude name="auto"/>
@@ -15,8 +16,8 @@
           <include name="beforeEachTest"/>
           <include name="endReport"/>
           <include name="afterEachTest"/>
-          <include name="homeQuoteTesting"/>
           <include name="initiatinExtentReport"/>
+          <include name="homeQuoteTesting"/>
         </methods>
       </class> <!-- progressive.qa.home.HomeQuoteTest -->
     </classes>

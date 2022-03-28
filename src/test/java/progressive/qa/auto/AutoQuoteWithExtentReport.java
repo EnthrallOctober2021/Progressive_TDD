@@ -31,7 +31,7 @@ public class AutoQuoteWithExtentReport extends BaseClass {
 		return data;
 	}
 	
-	@Test(dataProvider = "autoDataExcel", groups = "auto")
+	@Test(dataProvider = "autoDataExcel", groups = "auto", enabled = false)
 	public void autoQuoteTestingWithExcelDataProbider(String zipCode, String zipCodeTitle, String nameTitle, String firstName,
 			String lastName, String suffix, String dob, String address, String apt, String city, String vehicleTtitle) {
 		productsPage.productPageAutoSteps();

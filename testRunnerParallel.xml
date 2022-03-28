@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SmokeSuite" parallel="methods" thread-count="5">
+	<test name="smoke">
+		<parameter name="browser" value="cloud"></parameter>
+		<groups>
+			<run>
+				<exclude name="auto"></exclude>
+			</run>
+		</groups>
+		<classes>
+			<class name="progressive.qa.auto.AutoQuoteTest">
+			<parameter name = "platform" value = "ios"/>
+				<methods>
+					<exclude name="autoQuoteTestingWithIterator2DataProbider"></exclude>
+				</methods>
+			</class>
+			<class name="progressive.qa.home.HomeQuoteTest">
+			<parameter name = "platform" value = "android"/>
+				<methods>
+					<include name="homeQuoteTesting"></include>
+				</methods>
+			</class>
+			<class name="progressive.qa.auto.AutoQuoteWithExtentReport">
+				<methods>
+					<include name="test1"></include>
+					<include name="test2"></include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- SmokeTest -->
+</suite> <!-- SmokeSuite -->

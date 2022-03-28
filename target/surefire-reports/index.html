@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Surefire_suite">
+              <span class="suite-name border-skipped">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Surefire_suite">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Surefire_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Surefire_suite">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Surefire_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Surefire_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Surefire_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Surefire_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">15 methods,  15 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods skipped suite-Surefire_suite"> (hide)</a> <!-- hide-methods skipped suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods skipped suite-Surefire_suite"> (show)</a> <!-- show-methods skipped suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Surefire_suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="progressive.qa.auto.AutoQuoteTest" hash-for-method="autoQuoteTesting">autoQuoteTesting</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="progressive.qa.auto.AutoQuoteTest" hash-for-method="autoQuoteTestingWithExcelDataProbider(10472, Enter ZIP Code, Name &amp; Birthdate, Bright, Girl, JR, 03/05/1999, 1945 Paul Ave, 1c, Bronx, Tel...)">autoQuoteTestingWithExcelDataProbider(10472, Enter ZIP Code, Name & Birthdate, Bright, Girl, JR, 03/05/1999, 1945 Paul Ave, 1c, Bronx, Tel...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="progressive.qa.auto.AutoQuoteTest" hash-for-method="autoQuoteTestingWithExcelDataProbider(10472, Enter ZIP Code, Name &amp; Birthdate, Bright, Boy, JR, 02/05/1999, 1943 Paul Ave, 5b, Bronx, Tell...)">autoQuoteTestingWithExcelDataProbider(10472, Enter ZIP Code, Name & Birthdate, Bright, Boy, JR, 02/05/1999, 1943 Paul Ave, 5b, Bronx, Tell...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="progressive.qa.auto.AutoQuoteTest" hash-for-method="autoQuoteTestingWithExcelDataProbider(10473, Enter ZIP Code, Name &amp; Birthdate, Talent, Boy, SR, 11/11/1988, 1020 Paul Ave, 4b, Bronx, Tell...)">autoQuoteTestingWithExcelDataProbider(10473, Enter ZIP Code, Name & Birthdate, Talent, Boy, SR, 11/11/1988, 1020 Paul Ave, 4b, Bronx, Tell...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="progressive.qa.auto.AutoQuoteTest" hash-for-method="autoQuoteTestingWithExcelDataProbider(null, null, null, null, null, null, null, null, null, null, null)">autoQuoteTestingWithExcelDataProbider(null, null, null, null, null, null, null, null, null, null, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="progressive.qa.auto.AutoQuoteTest" hash-for-method="autoQuoteTestingWithIterator2DataProbider(progressive.qa.data.ZipCodeData@4f5991f6)">autoQuoteTestingWithIterator2DataProbider(progressive.qa.data.ZipCodeData@4f5991f6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="progressive.qa.auto.AutoQuoteTest" hash-for-method="autoQuoteTestingWithIterator2DataProbider(progressive.qa.data.ZipCodeData@764faa6)">autoQuoteTestingWithIterator2DataProbider(progressive.qa.data.ZipCodeData@764faa6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="progressive.qa.auto.AutoQuoteTest" hash-for-method="autoQuoteTestingWithIterator2DataProbider(progressive.qa.data.ZipCodeData@2c07545f)">autoQuoteTestingWithIterator2DataProbider(progressive.qa.data.ZipCodeData@2c07545f)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="progressive.qa.auto.AutoQuoteTest" hash-for-method="autoQuoteTestingWithIteratorDataProbider(progressive.qa.data.AutoDataClass@d62fe5b)">autoQuoteTestingWithIteratorDataProbider(progressive.qa.data.AutoDataClass@d62fe5b)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="progressive.qa.auto.AutoQuoteTest" hash-for-method="autoQuoteTestingWithIteratorDataProbider(progressive.qa.data.AutoDataClass@e70f13a)">autoQuoteTestingWithIteratorDataProbider(progressive.qa.data.AutoDataClass@e70f13a)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="progressive.qa.auto.AutoQuoteTest" hash-for-method="autoQuoteTestingWithIteratorDataProbider(progressive.qa.data.AutoDataClass@27eedb64)">autoQuoteTestingWithIteratorDataProbider(progressive.qa.data.AutoDataClass@27eedb64)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="progressive.qa.home.HomeQuoteTest" hash-for-method="homeQuoteTesting">homeQuoteTesting</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="progressive.qa.home.HomeQuoteTest" hash-for-method="homeTest">homeTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="progressive.qa.auto.AutoQuoteTest" hash-for-method="testMethodAuto">testMethodAuto</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="progressive.qa.auto.AutoQuoteTest" hash-for-method="testMethodAuto1">testMethodAuto1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">progressive.qa.home.HomeQuoteTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="homeQuoteTesting">
+                  </a> <!-- homeQuoteTesting -->
+                  <span class="method-name">homeQuoteTesting</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="homeTest">
+                  </a> <!-- homeTest -->
+                  <span class="method-name">homeTest</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-skipped -->
+          <div class="suite-Surefire_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">progressive.qa.auto.AutoQuoteTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="autoQuoteTesting">
+                  </a> <!-- autoQuoteTesting -->
+                  <span class="method-name">autoQuoteTesting</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="autoQuoteTestingWithExcelDataProbider(10472, Enter ZIP Code, Name &amp; Birthdate, Bright, Girl, JR, 03/05/1999, 1945 Paul Ave, 1c, Bronx, Tel...)">
+                  </a> <!-- autoQuoteTestingWithExcelDataProbider(10472, Enter ZIP Code, Name & Birthdate, Bright, Girl, JR, 03/05/1999, 1945 Paul Ave, 1c, Bronx, Tel...) -->
+                  <span class="method-name">autoQuoteTestingWithExcelDataProbider</span>
+                  <span class="parameters">(10472, Enter ZIP Code, Name & Birthdate, Bright, Girl, JR, 03/05/1999, 1945 Paul Ave, 1c, Bronx, Tell us about your vehicle(s)…)</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="autoQuoteTestingWithExcelDataProbider(10472, Enter ZIP Code, Name &amp; Birthdate, Bright, Boy, JR, 02/05/1999, 1943 Paul Ave, 5b, Bronx, Tell...)">
+                  </a> <!-- autoQuoteTestingWithExcelDataProbider(10472, Enter ZIP Code, Name & Birthdate, Bright, Boy, JR, 02/05/1999, 1943 Paul Ave, 5b, Bronx, Tell...) -->
+                  <span class="method-name">autoQuoteTestingWithExcelDataProbider</span>
+                  <span class="parameters">(10472, Enter ZIP Code, Name & Birthdate, Bright, Boy, JR, 02/05/1999, 1943 Paul Ave, 5b, Bronx, Tell us about your vehicle(s)…)</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="autoQuoteTestingWithExcelDataProbider(10473, Enter ZIP Code, Name &amp; Birthdate, Talent, Boy, SR, 11/11/1988, 1020 Paul Ave, 4b, Bronx, Tell...)">
+                  </a> <!-- autoQuoteTestingWithExcelDataProbider(10473, Enter ZIP Code, Name & Birthdate, Talent, Boy, SR, 11/11/1988, 1020 Paul Ave, 4b, Bronx, Tell...) -->
+                  <span class="method-name">autoQuoteTestingWithExcelDataProbider</span>
+                  <span class="parameters">(10473, Enter ZIP Code, Name & Birthdate, Talent, Boy, SR, 11/11/1988, 1020 Paul Ave, 4b, Bronx, Tell us about your vehicle(s)…)</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="autoQuoteTestingWithExcelDataProbider(null, null, null, null, null, null, null, null, null, null, null)">
+                  </a> <!-- autoQuoteTestingWithExcelDataProbider(null, null, null, null, null, null, null, null, null, null, null) -->
+                  <span class="method-name">autoQuoteTestingWithExcelDataProbider</span>
+                  <span class="parameters">(null, null, null, null, null, null, null, null, null, null, null)</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="autoQuoteTestingWithIterator2DataProbider(progressive.qa.data.ZipCodeData@4f5991f6)">
+                  </a> <!-- autoQuoteTestingWithIterator2DataProbider(progressive.qa.data.ZipCodeData@4f5991f6) -->
+                  <span class="method-name">autoQuoteTestingWithIterator2DataProbider</span>
+                  <span class="parameters">(progressive.qa.data.ZipCodeData@4f5991f6)</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="autoQuoteTestingWithIterator2DataProbider(progressive.qa.data.ZipCodeData@764faa6)">
+                  </a> <!-- autoQuoteTestingWithIterator2DataProbider(progressive.qa.data.ZipCodeData@764faa6) -->
+                  <span class="method-name">autoQuoteTestingWithIterator2DataProbider</span>
+                  <span class="parameters">(progressive.qa.data.ZipCodeData@764faa6)</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="autoQuoteTestingWithIterator2DataProbider(progressive.qa.data.ZipCodeData@2c07545f)">
+                  </a> <!-- autoQuoteTestingWithIterator2DataProbider(progressive.qa.data.ZipCodeData@2c07545f) -->
+                  <span class="method-name">autoQuoteTestingWithIterator2DataProbider</span>
+                  <span class="parameters">(progressive.qa.data.ZipCodeData@2c07545f)</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="autoQuoteTestingWithIteratorDataProbider(progressive.qa.data.AutoDataClass@d62fe5b)">
+                  </a> <!-- autoQuoteTestingWithIteratorDataProbider(progressive.qa.data.AutoDataClass@d62fe5b) -->
+                  <span class="method-name">autoQuoteTestingWithIteratorDataProbider</span>
+                  <span class="parameters">(progressive.qa.data.AutoDataClass@d62fe5b)</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="autoQuoteTestingWithIteratorDataProbider(progressive.qa.data.AutoDataClass@e70f13a)">
+                  </a> <!-- autoQuoteTestingWithIteratorDataProbider(progressive.qa.data.AutoDataClass@e70f13a) -->
+                  <span class="method-name">autoQuoteTestingWithIteratorDataProbider</span>
+                  <span class="parameters">(progressive.qa.data.AutoDataClass@e70f13a)</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="autoQuoteTestingWithIteratorDataProbider(progressive.qa.data.AutoDataClass@27eedb64)">
+                  </a> <!-- autoQuoteTestingWithIteratorDataProbider(progressive.qa.data.AutoDataClass@27eedb64) -->
+                  <span class="method-name">autoQuoteTestingWithIteratorDataProbider</span>
+                  <span class="parameters">(progressive.qa.data.AutoDataClass@27eedb64)</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMethodAuto">
+                  </a> <!-- testMethodAuto -->
+                  <span class="method-name">testMethodAuto</span>
+                  <div class="stack-trace">java.lang.Throwable: Method progressive.qa.auto.AutoQuoteTest.testMethodAuto() on instance progressive.qa.auto.AutoQuoteTest@2641e737 depends on not successfully finished methods 
+[progressive.qa.auto.AutoQuoteTest.autoQuoteTesting() on instance progressive.qa.auto.AutoQuoteTest@2641e737]
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMethodAuto1">
+                  </a> <!-- testMethodAuto1 -->
+                  <span class="method-name">testMethodAuto1</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method setUp but has not been marked @Optional or defined
+
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-skipped -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Surefire suite&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Surefire test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;progressive.qa.auto.AutoQuoteTest&quot;/&gt;
+      &lt;class name=&quot;progressive.qa.home.HomeQuoteTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">auto</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">autoQuoteTesting</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">autoQuoteTestingWithExcelDataProbider</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">autoQuoteTestingWithIterator2DataProbider</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">autoQuoteTestingWithIteratorDataProbider</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testMethodAuto1</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">home</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">homeQuoteTesting</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">homeTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(15);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'autoQuoteTestingWithIteratorDataProbider')
+data.setCell(0, 2, 'progressive.qa.auto.AutoQuoteTest')
+data.setCell(0, 3, 0);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'homeTest')
+data.setCell(1, 2, 'progressive.qa.home.HomeQuoteTest')
+data.setCell(1, 3, 0);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'autoQuoteTestingWithIterator2DataProbider')
+data.setCell(2, 2, 'progressive.qa.auto.AutoQuoteTest')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'autoQuoteTestingWithExcelDataProbider')
+data.setCell(3, 2, 'progressive.qa.auto.AutoQuoteTest')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'autoQuoteTestingWithExcelDataProbider')
+data.setCell(4, 2, 'progressive.qa.auto.AutoQuoteTest')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'autoQuoteTestingWithIterator2DataProbider')
+data.setCell(5, 2, 'progressive.qa.auto.AutoQuoteTest')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testMethodAuto')
+data.setCell(6, 2, 'progressive.qa.auto.AutoQuoteTest')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testMethodAuto1')
+data.setCell(7, 2, 'progressive.qa.auto.AutoQuoteTest')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'autoQuoteTesting')
+data.setCell(8, 2, 'progressive.qa.auto.AutoQuoteTest')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'autoQuoteTestingWithExcelDataProbider')
+data.setCell(9, 2, 'progressive.qa.auto.AutoQuoteTest')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'autoQuoteTestingWithExcelDataProbider')
+data.setCell(10, 2, 'progressive.qa.auto.AutoQuoteTest')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'homeQuoteTesting')
+data.setCell(11, 2, 'progressive.qa.home.HomeQuoteTest')
+data.setCell(11, 3, 0);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'autoQuoteTestingWithIterator2DataProbider')
+data.setCell(12, 2, 'progressive.qa.auto.AutoQuoteTest')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'autoQuoteTestingWithIteratorDataProbider')
+data.setCell(13, 2, 'progressive.qa.auto.AutoQuoteTest')
+data.setCell(13, 3, 0);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'autoQuoteTestingWithIteratorDataProbider')
+data.setCell(14, 2, 'progressive.qa.auto.AutoQuoteTest')
+data.setCell(14, 3, 0);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 0 ms</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">autoQuoteTestingWithIterator2DataProbider(progressive.qa.data.ZipCodeData@2c07545f)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Name & Birthdate<br></span>
+                <span class="reporter-method-output">Name & Birthdate<br></span>
+                <span class="reporter-method-output">Name & Birthdate<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">2 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">progressive.qa.home.HomeQuoteTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">initiatinExtentReport</span>
+                <br/>
+                <span class="ignored-method-name">endReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">progressive.qa.auto.AutoQuoteTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">initiatinExtentReport</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachTest(public void progressive.qa.auto.AutoQuoteTest.autoQuoteTestingWithExcelDataProbider(java.lang.String...)</span>
+                <span class="method-start">1064 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp</span>
+                <span class="method-start">1075 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">autoQuoteTestingWithExcelDataProbider(null, null, null, null, null, null, null, null, null, null, null)</span>
+                <span class="method-start">1081 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTest</span>
+                <span class="method-start">1082 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachTest</span>
+                <span class="method-start">1083 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">autoQuoteTestingWithExcelDataProbider(10472, Enter ZIP Code, Name & Birthdate, Bright, Boy, JR, 02/05/1999, 1943 Paul Ave, 5b, Bronx, Tell...)</span>
+                <span class="method-start">1084 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTest</span>
+                <span class="method-start">1084 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1084 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTest</span>
+                <span class="method-start">1085 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachTest</span>
+                <span class="method-start">1085 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1085 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">autoQuoteTestingWithExcelDataProbider(10473, Enter ZIP Code, Name & Birthdate, Talent, Boy, SR, 11/11/1988, 1020 Paul Ave, 4b, Bronx, Tell...)</span>
+                <span class="method-start">1085 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachTest</span>
+                <span class="method-start">1086 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">autoQuoteTestingWithExcelDataProbider(10472, Enter ZIP Code, Name & Birthdate, Bright, Girl, JR, 03/05/1999, 1945 Paul Ave, 1c, Bronx, Tel...)</span>
+                <span class="method-start">1086 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1086 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTest</span>
+                <span class="method-start">1087 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachTest</span>
+                <span class="method-start">1090 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1091 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTest</span>
+                <span class="method-start">1091 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">autoQuoteTestingWithIterator2DataProbider(progressive.qa.data.ZipCodeData@764faa6)</span>
+                <span class="method-start">1091 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1092 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTest</span>
+                <span class="method-start">1092 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachTest</span>
+                <span class="method-start">1092 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">autoQuoteTestingWithIterator2DataProbider(progressive.qa.data.ZipCodeData@4f5991f6)</span>
+                <span class="method-start">1092 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachTest</span>
+                <span class="method-start">1093 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">autoQuoteTestingWithIterator2DataProbider(progressive.qa.data.ZipCodeData@2c07545f)</span>
+                <span class="method-start">1093 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1093 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTest</span>
+                <span class="method-start">1094 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachTest</span>
+                <span class="method-start">1102 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1102 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">autoQuoteTestingWithIteratorDataProbider(progressive.qa.data.AutoDataClass@e70f13a)</span>
+                <span class="method-start">1102 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTest</span>
+                <span class="method-start">1104 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachTest</span>
+                <span class="method-start">1105 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1105 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">autoQuoteTestingWithIteratorDataProbider(progressive.qa.data.AutoDataClass@d62fe5b)</span>
+                <span class="method-start">1105 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1106 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachTest</span>
+                <span class="method-start">1106 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">autoQuoteTestingWithIteratorDataProbider(progressive.qa.data.AutoDataClass@27eedb64)</span>
+                <span class="method-start">1106 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTest</span>
+                <span class="method-start">1106 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachTest</span>
+                <span class="method-start">1107 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTest</span>
+                <span class="method-start">1107 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTest</span>
+                <span class="method-start">1108 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testMethodAuto1</span>
+                <span class="method-start">1108 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1108 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">autoQuoteTesting</span>
+                <span class="method-start">1109 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachTest</span>
+                <span class="method-start">1109 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTest</span>
+                <span class="method-start">1109 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1109 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testMethodAuto</span>
+                <span class="method-start">1111 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">progressive.qa.home.HomeQuoteTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp</span>
+                <span class="method-start">1112 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachTest(public void progressive.qa.home.HomeQuoteTest.homeQuoteTesting())</span>
+                <span class="method-start">1112 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTest</span>
+                <span class="method-start">1113 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">homeQuoteTesting</span>
+                <span class="method-start">1113 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">homeTest</span>
+                <span class="method-start">1114 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterEachTest</span>
+                <span class="method-start">1114 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1114 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachTest</span>
+                <span class="method-start">1114 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">progressive.qa.auto.AutoQuoteTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">endReport</span>
+                <span class="method-start">1197 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
